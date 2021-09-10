@@ -1,6 +1,6 @@
-level=res/levels/world1/tutorial/tutorial.map
+﻿level=res/levels/world1/tutorial/tutorial.map
 levelname=Tutorial
-skybox=res/sprites/common/skybox.png
+skybox=res/misc/randomsprites/skybox.png
 music=res/sfx/music/world1/tutorial.wav>true
 entity=checkpoint
 params=300>150
@@ -15,7 +15,7 @@ params=1350>140
 entity=checkpoint
 params=1710>120
 entity=portal
-params=1760>115>false>res/levels/world1/level1/level1.apscene
+params=1760>115>false>res/levels/world1/level1.apscene
 entity=text
 params=Arrow keys/WASD to move>150>150>0.15
 entity=text

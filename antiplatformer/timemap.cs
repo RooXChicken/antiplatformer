@@ -18,7 +18,7 @@ namespace antiplatformer
 
             m_vertices = new VertexArray();
 
-            load("res/sprites/tiles/tileset.png", new Vector2u(8, 8), levelData, mapSize.X, mapSize.Y);
+            load("res/sprites/tileset.png", new Vector2u(8, 8), levelData, mapSize.X, mapSize.Y);
 
             utils.Log("Loaded a tilemap with path: " + path);
         }

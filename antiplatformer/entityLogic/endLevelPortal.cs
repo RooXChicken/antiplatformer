@@ -20,7 +20,7 @@ namespace antiplatformer.entityLogic
 
         public Vector2f position = new Vector2f(0, 0);
         public Vector2f velocity = new Vector2f(0, 0);
-        public Sprite sprite = utils.loadSprite("res/sprites/common/decorations/portal.png");
+        public Sprite sprite = utils.loadSprite("res/misc/randomsprites/decorations/portal.png");
         public int maxHealth = 0;
         public int health = 0;
 

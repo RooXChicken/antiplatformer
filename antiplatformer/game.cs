@@ -56,7 +56,7 @@ namespace antiplatformer
         }
 
         //static variables
-        public static string GAME_VERSION = "0.1";
+        public static string GAME_VERSION = "0.1.1";
         public static Vector2f GAME_INTERNAL_RESOLUTION = new Vector2f(256, 144);
         public static Clock GAME_GAME_TIME = new Clock();
         public static int GAME_NUMBER_TICKS = 0;
@@ -117,19 +117,17 @@ namespace antiplatformer
             utils.Log("Starting game...");
 
             videomode = new VideoMode(1280, 720);
-            renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
-
-            if (renderWindow.IsOpen)
+            try
             {
-                utils.Log("Created the window");
+                renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
+                renderWindow.SetIcon(64, 64, GAME_WINDOW_ICON.Pixels);
+                utils.Log("Created the main window");
             }
-            else
+            catch(Exception e)
             {
-                utils.LogFatal("The window isnt open?!?!?!?", false);
-                renderWindow.Close();
+                utils.LogFatal("The window failed to open! how...? good luck fixing this one buddy: " + e, false);
             }
 
-            renderWindow.SetIcon(64, 64, GAME_WINDOW_ICON.Pixels);
             camera = new View(new Vector2f(0f, 0f), GAME_INTERNAL_RESOLUTION);
             uiCamera = new View(new Vector2f(127, 72), GAME_INTERNAL_RESOLUTION);
             utils.Log("Created the cameras");
@@ -142,7 +140,7 @@ namespace antiplatformer
         private void initSplash()
         {
             GAME_STATE = 0;
-            GAME_MAIN_SKYBOX = utils.loadSprite("res/sprites/common/skybox.png");
+            GAME_MAIN_SKYBOX = utils.loadSprite("res/misc/randomsprites/skybox.png");
             GAME_MAIN_SKYBOX.Position = new Vector2f(-1, 0);
 
             entityList.Add(new entity("splashScreen", ""));
@@ -193,7 +191,7 @@ namespace antiplatformer
             {
                 var fs = new FileStream("settings.txt", FileMode.Create);
                 fs.Dispose();
-                File.WriteAllText("settings.txt", "version=" + GAME_VERSION + "\nvolume=5.0\nmaxfps=0\nunfocusedfps=30");
+                File.WriteAllText("settings.txt", "version=" + GAME_VERSION + "\nvolume=5.0\nmaxfps=165\nunfocusedfps=30");
                 utils.Log("Created a new settings file");
             }
 
@@ -217,12 +215,7 @@ namespace antiplatformer
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
 
-            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tutorial/tutorial.apscene");
-
-            //entityUpdateRef = new ThreadStart(tickEntities);
-            //entityUpdate = new Thread(entityUpdateRef);
-
-            //entityUpdate.Start();
+            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tutorial.apscene");
         }
 
         public void update()
@@ -251,7 +244,7 @@ namespace antiplatformer
             }
             catch(Exception e)
             {
-                utils.LogFatal("Failed to update the main game! I'm going to keep going, but beware! Exception: " + e, true);
+                utils.LogFatal("Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: " + e, true);
             }
         }
 
@@ -305,25 +298,18 @@ namespace antiplatformer
         {
             if (!isLoading)
             {
-                try
-                {
-                    GAME_CAN_LOAD = false;
+                GAME_CAN_LOAD = false;
 
-                    tickEntities();
+                tickEntities();
 
-                    GAME_PLAYER_INDEX = entityList.Count - 1;
+                GAME_PLAYER_INDEX = entityList.Count - 1;
 
-                    GAME_PLAYER_POSITION = entityList[GAME_PLAYER_INDEX].myClass.position;
-                    camera.Center = GAME_PLAYER_POSITION;
+                GAME_PLAYER_POSITION = entityList[GAME_PLAYER_INDEX].myClass.position;
+                camera.Center = GAME_PLAYER_POSITION;
 
-                    debugText.DisplayedString = "The anti-Platformer V" + GAME_VERSION + " Debug menu\nFPS:" + (int)fps + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds();
+                debugText.DisplayedString = "The anti-Platformer V" + GAME_VERSION + " Debug menu\nFPS:" + (int)fps + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds();
 
-                    GAME_CAN_LOAD = true;
-                }
-                catch (Exception ex)
-                {
-                    utils.LogError("Main update failed with exceotion: " + ex);
-                }
+                GAME_CAN_LOAD = true;
             }
         }
 
