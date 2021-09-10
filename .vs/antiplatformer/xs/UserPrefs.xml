@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{7A931568-071A-4A73-BA0B-A133105530C9}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.antiplatformer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="antiplatformer/discordRPC.cs">
+    <Files>
+      <File FileName="antiplatformer/main.cs" Line="1" Column="1" />
+      <File FileName="antiplatformer/game.cs" Line="542" Column="14" />
+      <File FileName="antiplatformer/entityLogic/player.cs" Line="501" Column="49" />
+      <File FileName="antiplatformer/entityLogic/dustSprite.cs" Line="86" Column="52" />
+      <File FileName="antiplatformer/res/levels/world1/level1/level1.apscene" Line="22" Column="43" />
+      <File FileName="antiplatformer/res/levels/world1/level1/level1.map" Line="33" Column="622" />
+      <File FileName="antiplatformer/res/levels/world1/tutorial/tutorial.apscene" Line="25" Column="1" />
+      <File FileName="antiplatformer/scene.cs" Line="37" Column="39" />
+      <File FileName="antiplatformer/timemap.cs" Line="25" Column="95" />
+      <File FileName="antiplatformer/discordRPC.cs" Line="22" Column="40" />
+      <File FileName="antiplatformer/cutscenes.cs" Line="22" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="antiplatformer" expanded="True">
+            <Node name="antiplatformer" expanded="True">
+              <Node name="res" expanded="True">
+                <Node name="levels" expanded="True">
+                  <Node name="world1" expanded="True">
+                    <Node name="level1" expanded="True" />
+                    <Node name="tutorial" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="sprites" expanded="True">
+                  <Node name="enemies" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="discordRPC.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <AuthorInfo Name="RooXChicken" Email="rooxchicken@gmail.com" Copyright="idc resuse my code lol" Company="me" Trademark="" />
+</Properties>

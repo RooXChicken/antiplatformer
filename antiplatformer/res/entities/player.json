@@ -1,0 +1,13 @@
+﻿{
+    "name": "Roo",
+    "id": 1,
+    "x": 0,
+    "y": 0,
+    "maxHealth": 6,
+    "currentHealth": 6,
+    "movementSpeed": 100,
+    "crouchSpeed": 60,
+    "crouchJumpHeight": 140,
+    "jumpHeight": 160,
+    "gravitySpeed": 360
+}
