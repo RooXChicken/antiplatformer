@@ -13,6 +13,8 @@ namespace antiplatformer.entityLogic
 
         private Clock splashClock = new Clock();
 
+        public string[] input = { };
+
         public splashText()
         {
 

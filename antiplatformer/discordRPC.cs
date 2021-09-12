@@ -19,7 +19,7 @@ namespace antiplatformer
             //Invoke all the events, such as OnPresenceUpdate
             client.SetPresence(new RichPresence()
             {
-                Details = "Singleplayer V" + Game.GAME_VERSION,
+                Details = details,
                 State = message,
                 Assets = new Assets()
                 {

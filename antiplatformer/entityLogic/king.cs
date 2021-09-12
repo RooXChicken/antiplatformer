@@ -12,6 +12,8 @@ namespace antiplatformer.entityLogic
         public Vector2f position;
         public bool destroy = false;
 
+        public string[] input = { };
+
         public bool isFacingRight = true;
 
         Clock anim = new Clock();

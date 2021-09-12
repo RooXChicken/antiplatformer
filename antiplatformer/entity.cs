@@ -19,7 +19,7 @@
                     myClass = new entityLogic.textEntity(paramaters);
                     myClass.onSpawn();
                     break;
-                case "decor":
+                case "decoration":
                     myClass = new entityLogic.decoration(paramaters);
                     myClass.onSpawn();
                     break;
@@ -39,7 +39,7 @@
                     myClass = new entityLogic.checkpoint(paramaters);
                     myClass.onSpawn();
                     break;
-                case "portal":
+                case "endportal":
                     myClass = new entityLogic.endLevelPortal(paramaters);
                     myClass.onSpawn();
                     break;

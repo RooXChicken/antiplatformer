@@ -7,19 +7,23 @@ namespace antiplatformer.entityLogic
     {
         public int id = 4;
         public string name = "decoration";
-        public Sprite decor;
+        public Sprite sprite;
+        public string spritePath;
         public Vector2f position;
         public bool destroy = false;
 
+        public string[] input = { };
+
         public decoration(string path)
         {
-            string[] input = path.Split('>');
-            decor = utils.loadSprite(input[0]);
+            input = path.Split('>');
+            spritePath = input[0];
+            sprite = utils.loadSprite(spritePath);
 
-            decor.Position = new Vector2f(float.Parse(input[1]), float.Parse(input[2]));
+            sprite.Position = new Vector2f(float.Parse(input[1]), float.Parse(input[2]));
         }
 
-        public Sprite getSprite() { return decor; }
+        public Sprite getSprite() { return sprite; }
 
         public void onSpawn()
         {

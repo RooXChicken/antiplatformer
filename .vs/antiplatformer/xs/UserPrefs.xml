@@ -1,23 +1,37 @@
 ﻿<Properties StartupConfiguration="{7A931568-071A-4A73-BA0B-A133105530C9}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.antiplatformer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="antiplatformer/main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="antiplatformer/game.cs">
     <Files>
-      <File FileName="antiplatformer/main.cs" Line="27" Column="2" />
-      <File FileName="antiplatformer/game.cs" Line="76" Column="49" />
-      <File FileName="antiplatformer/entityLogic/player.cs" Line="501" Column="49" />
-      <File FileName="antiplatformer/entityLogic/dustSprite.cs" Line="86" Column="52" />
-      <File FileName="antiplatformer/res/levels/world1/level1.apscene" Line="2" Column="1" />
-      <File FileName="antiplatformer/res/levels/world1/tutorial.apscene" Line="28" Column="94" />
+      <File FileName="antiplatformer/main.cs" Line="25" Column="9" />
+      <File FileName="antiplatformer/game.cs" Line="59" Column="53" />
+      <File FileName="antiplatformer/sceneEditor.cs" Line="87" Column="37" />
+      <File FileName="antiplatformer/res/levels/world1/tutorial.apscene" Line="17" Column="11" />
+      <File FileName="antiplatformer/res/levels/world1/level1.apscene" Line="15" Column="11" />
+      <File FileName="antiplatformer/entityLogic/overlay.cs" Line="1" Column="1" />
+      <File FileName="antiplatformer/entityLogic/king.cs" Line="1" Column="1" />
+      <File FileName="antiplatformer/entityLogic/player.cs" Line="84" Column="27" />
+      <File FileName="antiplatformer/entityLogic/text.cs" Line="9" Column="37" />
+      <File FileName="antiplatformer/res/levels/world1/tuborial.apscene" Line="25" Column="32" />
+      <File FileName="antiplatformer/scene.cs" Line="57" Column="26" />
+      <File FileName="antiplatformer/entityLogic/decoration.cs" Line="9" Column="43" />
+      <File FileName="antiplatformer/entityLogic/dustSprite.cs" Line="12" Column="41" />
+      <File FileName="antiplatformer/entity.cs" Line="22" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="antiplatformer" expanded="True" selected="True">
             <Node name="antiplatformer" expanded="True">
+              <Node name="References" expanded="True" />
               <Node name="entityLogic" expanded="True" />
               <Node name="res" expanded="True">
                 <Node name="levels" expanded="True">
                   <Node name="world1" expanded="True" />
+                </Node>
+                <Node name="sfx" expanded="True">
+                  <Node name="music" expanded="True">
+                    <Node name="world1" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

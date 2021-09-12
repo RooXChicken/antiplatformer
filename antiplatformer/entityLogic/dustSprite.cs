@@ -9,7 +9,7 @@ namespace antiplatformer.entityLogic
 {
     public class dustSprite
     {
-        public string name = "dustsprite";
+        public string name = "DustSprite";
         public int id = 10;
         public int gameState = 0;
         public bool destroy = false;

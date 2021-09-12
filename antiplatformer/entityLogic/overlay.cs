@@ -12,6 +12,8 @@ namespace antiplatformer.entityLogic
         public Vector2f position;
         public bool destroy = false;
 
+        public string[] input = { };
+
         public overlay()
         {
 
@@ -21,7 +23,7 @@ namespace antiplatformer.entityLogic
 
         public void onSpawn(string paramaters)
         {
-            string[] input = paramaters.Split('>');
+            input = paramaters.Split('>');
             sprite = utils.loadSprite("res/misc/randomsprites/whiteScreen.png");
             sprite.Color = new Color(byte.Parse(input[0]), byte.Parse(input[1]), byte.Parse(input[2]), byte.Parse(input[3]));
         }

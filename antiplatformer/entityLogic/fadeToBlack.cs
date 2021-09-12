@@ -18,6 +18,8 @@ namespace antiplatformer.entityLogic
 
         private Clock fadeClock = new Clock();
 
+        public string[] input = { };
+
         public fadeToBlack()
         {
             sprite = utils.loadSprite("res/misc/randomsprites/blackScreen.png");

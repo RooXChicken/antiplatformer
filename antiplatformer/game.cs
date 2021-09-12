@@ -56,7 +56,7 @@ namespace antiplatformer
         }
 
         //static variables
-        public static string GAME_VERSION = "0.1.1";
+        public static string GAME_VERSION = "0.1.7";
         public static Vector2f GAME_INTERNAL_RESOLUTION = new Vector2f(256, 144);
         public static Clock GAME_GAME_TIME = new Clock();
         public static int GAME_NUMBER_TICKS = 0;
@@ -79,11 +79,13 @@ namespace antiplatformer
         private static RenderWindow renderWindow;
         private VideoMode videomode;
         public static bool isLoading = true;
-        private static View camera;
-        private View uiCamera;
+        public static View camera;
+        public static View uiCamera;
         private static Text debugText;
         public static discordRPC drpc = new discordRPC();
         private bool hasFocus = true;
+
+        private sceneEditor se = new sceneEditor();
 
         private bool skipSplash = false;
         private Clock splashClock = new Clock();
@@ -97,6 +99,7 @@ namespace antiplatformer
         private bool f2Pressed = false;
         private bool f5Pressed = false;
         private bool f3Pressed = false;
+        private bool f7Pressed = false;
         private bool debugOpen = false;
 
         public static TileMap tilemap = new TileMap();
@@ -110,6 +113,7 @@ namespace antiplatformer
         #endregion
 
         public bool isRunning() { return renderWindow.IsOpen; }
+        public static RenderWindow getRenderWindow() { return renderWindow; }
 
         public void init()
         {
@@ -215,7 +219,7 @@ namespace antiplatformer
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
 
-            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tutorial.apscene");
+            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tuborial.apscene");
         }
 
         public void update()
@@ -239,6 +243,10 @@ namespace antiplatformer
                     case 2:
                         mainUpdate();
                         mainRender();
+                        break;
+                    case 99:
+                        se.update(deltaTime);
+                        se.render();
                         break;
                 }
             }
@@ -357,7 +365,7 @@ namespace antiplatformer
                 try
                 {
                     Directory.CreateDirectory("screenshots");
-                    string path = "screenshots/" + DateTime.Now.ToLongTimeString() + DateTime.Now.Millisecond + ".png";
+                    string path = "screenshots/" + DateTime.Now.ToFileTime() + DateTime.Now.Millisecond + ".png";
                     screenshot.SaveToFile(path);
                     utils.Log("Saved a screenshot to: " + path);
                 }
@@ -392,6 +400,25 @@ namespace antiplatformer
             if (!Keyboard.IsKeyPressed(Keyboard.Key.F3) && f3Pressed)
             {
                 f3Pressed = false;
+            }
+
+            if (Keyboard.IsKeyPressed(Keyboard.Key.F7) && !f7Pressed)
+            {
+                f7Pressed = true;
+                if(GAME_STATE == 99)
+                {
+                    se.exit();
+                    GAME_STATE = 2;
+                }
+                else
+                {
+                    se.init();
+                    GAME_STATE = 99;
+                }
+            }
+            if (!Keyboard.IsKeyPressed(Keyboard.Key.F7) && f7Pressed)
+            {
+                f7Pressed = false;
             }
 
             #endregion

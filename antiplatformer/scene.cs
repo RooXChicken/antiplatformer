@@ -39,7 +39,7 @@ namespace antiplatformer
                 }
                 else if(item.Contains("levelname="))
                 {
-                    Game.drpc.Update("Singleplayer", "In level " + item.Substring(10));
+                    Game.drpc.Update("Singleplayer V" + Game.GAME_VERSION, "In level " + item.Substring(10));
                 }
                 else if(item.Contains("music="))
                 {

@@ -9,12 +9,13 @@ namespace antiplatformer.entityLogic
 {
     public class endLevelPortal
     {
-        public string name = "endLevelPortal";
+        public string name = "EndPortal";
         public int id = 9;
         public int gameState = 0;
         public bool destroy = false;
+        public bool facingRight = false;
 
-        string newScenePath = "NULL";
+        public string newScenePath = "NULL";
 
         public string[] input = { };
 
@@ -32,7 +33,12 @@ namespace antiplatformer.entityLogic
             sprite.Position = position;
             if(!Boolean.Parse(input[2]))
             {
+                facingRight = false;
                 sprite.Scale = new Vector2f(-1, 1);
+            }
+            else
+            {
+                facingRight = true;
             }
             newScenePath = input[3];
         }

@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using SFML.Graphics;
+﻿using SFML.Graphics;
+using SFML.System;
 
 namespace antiplatformer.entityLogic
 {
     public class errorEntity
     {
+
+        public string name = "ERROR";
         public int id = 0;
-        Sprite sprite;   
+        public bool destroy = false;
+
+        public string[] input = { };
+
+        public Vector2f position = new Vector2f(0, 0);
+        public Vector2f velocity = new Vector2f(0, 0);
+        public Sprite sprite;
+        public int maxHealth = 0;
+        public int health = 0;
+
         public errorEntity()
         {
 

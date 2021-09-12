@@ -6,15 +6,18 @@ namespace antiplatformer.entityLogic
     public class textEntity
     {
         public int id = 3;
-        public string name = "text";
+        public string name = "Text";
         public string textString = "PLACEHOLDER";
         public Text text;
+        public Sprite sprite = utils.loadSprite("res/missing.png");
         public Vector2f position;
         public bool destroy = false;
 
+        public string[] input = { };
+
         public textEntity(string textInput)
         {
-            string[] input = textInput.Split('>');
+            input = textInput.Split('>');
             position = new Vector2f(float.Parse(input[1]), float.Parse(input[2]));
             textString = input[0];
             text = new Text(textString, Game.GAME_MAIN_FONT);
@@ -31,7 +34,8 @@ namespace antiplatformer.entityLogic
 
         public void update(float deltaTime)
         {
-            //nothing else lol
+            text.Position = position;
+            sprite.Position = position;
         }
 
         public void onKill()
