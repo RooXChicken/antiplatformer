@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{7A931568-071A-4A73-BA0B-A133105530C9}</ProjectGuid>
+    <ProjectGuid>{86A28931-119A-4A6F-B521-1549A543C600}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>antiplatformer</RootNamespace>
     <AssemblyName>antiplatformer</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <PackageId>antiplatformer</PackageId>
-    <PackageVersion>0.0.3</PackageVersion>
-    <Authors>RooXChicken</Authors>
-    <Description>The anti-Platformer (very detailed ik)</Description>
-    <ReleaseVersion>0.2</ReleaseVersion>
+    <ReleaseVersion>A-0.2.1</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -29,19 +24,15 @@
       <CustomCommands>
         <Command>
           <type>BeforeBuild</type>
-          <command>rm -rf bin/Debug/res/</command>
-          <workingdir>${ProjectDir}</workingdir>
-          <pauseExternalConsole>True</pauseExternalConsole>
+          <command>rm -rf bin/Debug/res</command>
         </Command>
         <Command>
           <type>BeforeBuild</type>
-          <command>cp res -r bin/Debug/</command>
-          <workingdir>${ProjectDir}</workingdir>
+          <command>cp res -r bin/Debug</command>
         </Command>
       </CustomCommands>
     </CustomCommands>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <Optimize>true</Optimize>
@@ -51,16 +42,14 @@
     <ExternalConsole>true</ExternalConsole>
     <PlatformTarget>x86</PlatformTarget>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="SFML.Audio">
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Audio.dll</HintPath>
     </Reference>
-    <Reference Include="DiscordRPC">
-      <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
+    <Reference Include="SFML.Graphics">
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Graphics.dll</HintPath>
     </Reference>
     <Reference Include="SFML.System">
       <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.System.dll</HintPath>
@@ -68,48 +57,49 @@
     <Reference Include="SFML.Window">
       <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Window.dll</HintPath>
     </Reference>
-    <Reference Include="SFML.Graphics">
-      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Graphics.dll</HintPath>
-    </Reference>
-    <Reference Include="SFML.Audio">
-      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Audio.dll</HintPath>
-    </Reference>
     <Reference Include="tgui.net">
-      <HintPath>bin\Debug\tgui.net.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\tgui.net.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DiscordRPC">
+      <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="game.cs" />
-    <Compile Include="entity.cs" />
-    <Compile Include="entityLogic\error.cs" />
-    <Compile Include="entityLogic\player.cs" />
-    <Compile Include="discordRPC.cs" />
-    <Compile Include="utils.cs" />
-    <Compile Include="ui.cs" />
     <Compile Include="animation.cs" />
-    <Compile Include="entityLogic\text.cs" />
-    <Compile Include="entityLogic\splashScreen.cs" />
-    <Compile Include="entityLogic\decoration.cs" />
     <Compile Include="cutscenes.cs" />
-    <Compile Include="entityLogic\fadeToBlack.cs" />
-    <Compile Include="entityLogic\placeholder.cs" />
+    <Compile Include="discordRPC.cs" />
+    <Compile Include="entity.cs" />
+    <Compile Include="game.cs" />
+    <Compile Include="main.cs" />
     <Compile Include="scene.cs" />
-    <Compile Include="entityLogic\overlay.cs" />
-    <Compile Include="entityLogic\king.cs" />
-    <Compile Include="timemap.cs" />
-    <Compile Include="entityLogic\checkpoint.cs" />
-    <Compile Include="entityLogic\endLevelPortal.cs" />
-    <Compile Include="entityLogic\dustSprite.cs" />
     <Compile Include="sceneEditor.cs" />
+    <Compile Include="timemap.cs" />
+    <Compile Include="ui.cs" />
+    <Compile Include="utils.cs" />
+    <Compile Include="entityLogic\text.cs" />
+    <Compile Include="entityLogic\overlay.cs" />
+    <Compile Include="entityLogic\decoration.cs" />
+    <Compile Include="entityLogic\player.cs" />
+    <Compile Include="entityLogic\king.cs" />
+    <Compile Include="entityLogic\checkpoint.cs" />
+    <Compile Include="entityLogic\placeholder.cs" />
+    <Compile Include="entityLogic\dustSprite.cs" />
+    <Compile Include="entityLogic\endLevelPortal.cs" />
+    <Compile Include="entityLogic\error.cs" />
+    <Compile Include="entityLogic\fadeToBlack.cs" />
+    <Compile Include="entityLogic\splashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="currentEntityID.txt" />
+    <None Include="story.txt" />
     <None Include="res\icon.png" />
     <None Include="res\missing.png" />
+    <None Include="res\gui\sceneeditor.gui" />
     <None Include="res\sfx\jump5.ogg" />
     <None Include="res\sfx\jump2.ogg" />
     <None Include="res\sfx\jump1.ogg" />
@@ -206,14 +196,8 @@
     <None Include="res\levels\world1\intro\res\skybox.png" />
     <None Include="res\levels\world1\tutorial\tutorial.map" />
     <None Include="res\levels\world1\level1\level1.map" />
-    <None Include="res\gui\sceneeditor.gui" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="entityLogic\" />
-    <Folder Include="logs\" />
-    <Folder Include="res\gui\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
   <Import Project="..\packages\TGUI.Net.win-x64.0.8.8.17\build\TGUI.Net.win-x64.targets" Condition="Exists('..\packages\TGUI.Net.win-x64.0.8.8.17\build\TGUI.Net.win-x64.targets')" />
 </Project>

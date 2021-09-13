@@ -1,29 +1,17 @@
-﻿<Properties StartupConfiguration="{7A931568-071A-4A73-BA0B-A133105530C9}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties StartupConfiguration="{86A28931-119A-4A6F-B521-1549A543C600}|Default">
   <MonoDevelop.Ide.ItemProperties.antiplatformer PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="antiplatformer/main.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="antiplatformer/game.cs">
     <Files>
-      <File FileName="antiplatformer/main.cs" Line="9" Column="28" />
-      <File FileName="antiplatformer/game.cs" Line="70" Column="59" />
-      <File FileName="antiplatformer/sceneEditor.cs" Line="257" Column="48" />
-      <File FileName="antiplatformer/scene.cs" Line="107" Column="40" />
-      <File FileName="antiplatformer/res/levels/world1/level1.apscene" Line="26" Column="19" />
-      <File FileName="antiplatformer/entity.cs" Line="49" Column="27" />
-      <File FileName="antiplatformer/res/levels/world1/tutorial.apscene" Line="18" Column="55" />
-      <File FileName="antiplatformer/entityLogic/endLevelPortal.cs" Line="62" Column="44" />
-      <File FileName="antiplatformer/entityLogic/decoration.cs" Line="20" Column="33" />
+      <File FileName="antiplatformer/main.cs" Line="8" Column="42" />
+      <File FileName="antiplatformer/game.cs" Line="87" Column="39" />
+      <File FileName="antiplatformer/cutscenes.cs" Line="26" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="antiplatformer" expanded="True" selected="True">
-            <Node name="antiplatformer" expanded="True">
-              <Node name="entityLogic" expanded="True" />
-              <Node name="res" expanded="True">
-                <Node name="gui" expanded="True" />
-                <Node name="levels" expanded="True">
-                  <Node name="world1" expanded="True" />
-                </Node>
-              </Node>
+          <Node name="antiplatformer" expanded="True">
+            <Node name="antiplatformer" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -31,10 +19,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <AuthorInfo Name="RooXChicken" Email="rooxchicken@gmail.com" Copyright="idc resuse my code lol" Company="me" Trademark="" />
 </Properties>

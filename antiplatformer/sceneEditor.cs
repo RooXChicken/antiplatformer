@@ -351,8 +351,7 @@ namespace antiplatformer
                         }
                         else
                         {
-                            utils.Log("Please specify a scene path!");
-                            File.WriteAllText("res/scene.apscene", finalInput);
+                            utils.Log("Please specify a scene path! Not saving any changes!");
                         }
                     }
                 }

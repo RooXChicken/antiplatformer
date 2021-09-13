@@ -57,7 +57,7 @@ namespace antiplatformer
         }
 
         //static variables
-        public static string GAME_VERSION = "0.2";
+        public static string GAME_VERSION = "A-0.2.1";
         public static Vector2f GAME_INTERNAL_RESOLUTION = new Vector2f(256, 144);
         public static Clock GAME_GAME_TIME = new Clock();
         public static Clock GAME_SPEEDRUN_TIMER;
