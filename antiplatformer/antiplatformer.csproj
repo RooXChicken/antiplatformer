@@ -13,7 +13,7 @@
     <PackageVersion>0.0.3</PackageVersion>
     <Authors>RooXChicken</Authors>
     <Description>The anti-Platformer (very detailed ik)</Description>
-    <ReleaseVersion>0.1.7</ReleaseVersion>
+    <ReleaseVersion>0.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,16 +63,20 @@
       <HintPath>..\packages\DiscordRichPresence.1.0.175\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
     <Reference Include="SFML.System">
-      <HintPath>..\packages\SFML.System.2.5.0\lib\netstandard2.0\SFML.System.dll</HintPath>
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.System.dll</HintPath>
     </Reference>
     <Reference Include="SFML.Window">
-      <HintPath>..\packages\SFML.Window.2.5.0\lib\netstandard2.0\SFML.Window.dll</HintPath>
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Window.dll</HintPath>
     </Reference>
     <Reference Include="SFML.Graphics">
-      <HintPath>..\packages\SFML.Graphics.2.5.0\lib\netstandard2.0\SFML.Graphics.dll</HintPath>
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Graphics.dll</HintPath>
     </Reference>
     <Reference Include="SFML.Audio">
-      <HintPath>..\packages\SFML.Audio.2.5.0\lib\netstandard2.0\SFML.Audio.dll</HintPath>
+      <HintPath>..\packages\TGUI.Net.win-x64.0.8.8.17\lib\netstandard2.0\SFML.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="tgui.net">
+      <HintPath>bin\Debug\tgui.net.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -202,12 +206,14 @@
     <None Include="res\levels\world1\intro\res\skybox.png" />
     <None Include="res\levels\world1\tutorial\tutorial.map" />
     <None Include="res\levels\world1\level1\level1.map" />
-    <None Include="res\levels\world1\tuborial.apscene" />
+    <None Include="res\gui\sceneeditor.gui" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="entityLogic\" />
     <Folder Include="logs\" />
+    <Folder Include="res\gui\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
+  <Import Project="..\packages\TGUI.Net.win-x64.0.8.8.17\build\TGUI.Net.win-x64.targets" Condition="Exists('..\packages\TGUI.Net.win-x64.0.8.8.17\build\TGUI.Net.win-x64.targets')" />
 </Project>

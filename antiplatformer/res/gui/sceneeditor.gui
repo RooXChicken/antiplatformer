@@ -1,0 +1,345 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordisabled = #E6E6E6;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordisabled = #7D7D7D;
+    bordercolordown = black;
+    bordercolorfocused = #1E1EB4;
+    bordercolorhover = black;
+    borders = (1, 1, 1, 1);
+    textcolor = #3C3C3C;
+    textcolordisabled = #7D7D7D;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    backgroundcolor = white;
+    bordercolor = black;
+    borders = (1, 1, 1, 1);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (0, 0, 0, 0);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    texturebackground = None;
+}
+
+Renderer.3 {
+    backgroundcolor = #E6E6E6;
+    borderbelowtitlebar = 1;
+    bordercolor = black;
+    borders = (1, 1, 1, 1);
+    distancetoside = 3;
+    paddingbetweenbuttons = 1;
+    showtextontitlebuttons = true;
+    texturebackground = None;
+    texturetitlebar = None;
+    titlebarcolor = white;
+    titlecolor = #3C3C3C;
+
+    closebutton {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordown = #EBEBEB;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolordown = black;
+        bordercolorhover = black;
+        borders = (1, 1, 1, 1);
+        textcolor = #3C3C3C;
+        textcolordown = black;
+        textcolorhover = black;
+        texture = None;
+        texturedisabled = None;
+        texturedown = None;
+        texturefocused = None;
+        texturehover = None;
+    }
+
+    minimizebutton {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordown = #EBEBEB;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolordown = black;
+        bordercolorhover = black;
+        borders = (1, 1, 1, 1);
+        textcolor = #3C3C3C;
+        textcolordown = black;
+        textcolorhover = black;
+        texture = None;
+        texturedisabled = None;
+        texturedown = None;
+        texturefocused = None;
+        texturehover = None;
+    }
+}
+
+Renderer.4 {
+    backgroundcolor = white;
+    bordercolor = black;
+    borders = (1, 1, 1, 1);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (0, 0, 0, 0);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    texturebackground = None;
+
+    scrollbar {
+        arrowbackgroundcolor = #F5F5F5;
+        arrowbackgroundcolorhover = white;
+        arrowcolor = #3C3C3C;
+        arrowcolorhover = black;
+        texturearrowdown = None;
+        texturearrowdownhover = None;
+        texturearrowup = None;
+        texturearrowuphover = None;
+        texturethumb = None;
+        texturethumbhover = None;
+        texturetrack = None;
+        texturetrackhover = None;
+        thumbcolor = #DCDCDC;
+        thumbcolorhover = #E6E6E6;
+        trackcolor = #F5F5F5;
+    }
+}
+
+ChildWindow.sceneEditorWindow {
+    Position = (840, 5);
+    Resizable = true;
+    Size = (430, 362);
+    Title = "Scene editor";
+    TitleAlignment = Center;
+    TitleButtons = Minimize | Close;
+    renderer = &3;
+
+    TextBox.path {
+        DefaultText = "Level Path";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 10);
+        Size = (408, 23.1309);
+        Text = "";
+        TextSize = 16;
+        UserData = "";
+
+        Renderer {
+            backgroundcolor = white;
+            bordercolor = black;
+            borders = (1, 1, 1, 1);
+            caretcolor = black;
+            caretwidth = 1;
+            defaulttextcolor = #A0A0A0;
+            padding = (0, 0, 0, 0);
+            selectedtextbackgroundcolor = #006EFF;
+            selectedtextcolor = white;
+            textcolor = #3C3C3C;
+            texturebackground = None;
+
+            scrollbar {
+                arrowbackgroundcolor = #F5F5F5;
+                arrowbackgroundcolorhover = white;
+                arrowcolor = #3C3C3C;
+                arrowcolorhover = black;
+                texturearrowdown = None;
+                texturearrowdownhover = None;
+                texturearrowup = None;
+                texturearrowuphover = None;
+                texturethumb = None;
+                texturethumbhover = None;
+                texturetrack = None;
+                texturetrackhover = None;
+                thumbcolor = #DCDCDC;
+                thumbcolorhover = #E6E6E6;
+                trackcolor = #F5F5F5;
+            }
+        }
+    }
+
+    TextBox.name {
+        DefaultText = "Level Name";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 40);
+        Size = (408, 23.1309);
+        Text = "";
+        TextSize = 16;
+        renderer = &4;
+    }
+
+    TextBox.skybox {
+        DefaultText = "Skybox Path";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 70);
+        Size = (408, 23.1309);
+        Text = "";
+        TextSize = 16;
+        renderer = &4;
+    }
+
+    TextBox.music {
+        DefaultText = "Music Path (none for no music)";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 100);
+        Size = (408, 23.1309);
+        Text = "";
+        TextSize = 16;
+        renderer = &4;
+    }
+
+    TextBox.entity {
+        DefaultText = "Please select an entity";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 160);
+        Size = (408, 163.131);
+        Text = "";
+        TextSize = 16;
+        renderer = &4;
+    }
+
+    Button.spawn {
+        Enabled = false;
+        Position = (150, 330);
+        Size = (111, 22);
+        Text = "Spawn Entity";
+        TextSize = 13;
+        renderer = &1;
+    }
+
+    TextBox.save {
+        DefaultText = "Export Path";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 130);
+        Size = (408, 23.1309);
+        Text = "";
+        TextSize = 16;
+
+        Renderer {
+            backgroundcolor = white;
+            bordercolor = black;
+            borders = (1, 1, 1, 1);
+            caretcolor = black;
+            caretwidth = 1;
+            defaulttextcolor = #A0A0A0;
+            padding = (0, 0, 0, 0);
+            selectedtextbackgroundcolor = #006EFF;
+            selectedtextcolor = white;
+            textcolor = #3C3C3C;
+            texturebackground = None;
+
+            scrollbar {
+                arrowbackgroundcolor = #F5F5F5;
+                arrowbackgroundcolorhover = white;
+                arrowcolor = #3C3C3C;
+                arrowcolorhover = black;
+                texturearrowdown = None;
+                texturearrowdownhover = None;
+                texturearrowup = None;
+                texturearrowuphover = None;
+                texturethumb = None;
+                texturethumbhover = None;
+                texturetrack = None;
+                texturetrackhover = None;
+                thumbcolor = #DCDCDC;
+                thumbcolorhover = #E6E6E6;
+                trackcolor = #F5F5F5;
+            }
+        }
+    }
+}
+
+ChildWindow.createEntity {
+    Enabled = false;
+    Position = (410, 210);
+    Size = (400, 300);
+    Title = "Create entity";
+    TitleAlignment = Center;
+    TitleButtons = Close;
+    Visible = false;
+    renderer = &3;
+
+    TextBox.eName {
+        DefaultText = "Entity Name";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 10);
+        Size = (378, 35);
+        Text = "";
+        TextSize = 13;
+        renderer = &2;
+    }
+
+    TextBox.ePos {
+        DefaultText = "Entity Position";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 60);
+        Size = (378, 35);
+        Text = "";
+        TextSize = 13;
+        renderer = &2;
+    }
+
+    TextBox.eParam {
+        DefaultText = "Extra Paramaters";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (10, 110);
+        Size = (378, 155);
+        Text = "";
+        TextSize = 13;
+        renderer = &2;
+    }
+
+    Button.Button1 {
+        Position = (10, 270);
+        Size = (381, 22);
+        Text = "Spawn Entity";
+        TextSize = 13;
+        renderer = &1;
+    }
+}
+
+Tabs.tabs {
+    AutoSize = 0;
+    Enabled = false;
+    Size = (335.6, 22);
+    Tabs = [Open, Edit, View];
+    TextSize = 13;
+    Visible = false;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolordisabled = #E6E6E6;
+        backgroundcolorhover = white;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        selectedbackgroundcolor = #006EFF;
+        selectedbackgroundcolorhover = #1E96FF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        textcolordisabled = #7D7D7D;
+        textcolorhover = black;
+        texturedisabledtab = None;
+        textureselectedtab = None;
+        textureselectedtabhover = None;
+        texturetab = None;
+        texturetabhover = None;
+    }
+}

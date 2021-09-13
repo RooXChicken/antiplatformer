@@ -40,6 +40,15 @@ namespace antiplatformer.entityLogic
 
         public Sprite getSprite() { return sprite; }
 
+        public void parseInput()
+        {
+            position = new Vector2f(float.Parse(input[0]) + 1, float.Parse(input[1]));
+            position2 = float.Parse(input[2]);
+            position3 = float.Parse(input[3]);
+            movementSpeed = float.Parse(input[4]);
+            sprite.Position = position;
+        }
+
         public void onSpawn()
         {
             //nothing lol

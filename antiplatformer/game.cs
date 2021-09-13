@@ -6,6 +6,7 @@ using SFML.Audio;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
+using TGUI;
 
 namespace antiplatformer
 {
@@ -56,9 +57,10 @@ namespace antiplatformer
         }
 
         //static variables
-        public static string GAME_VERSION = "0.1.7";
+        public static string GAME_VERSION = "0.2";
         public static Vector2f GAME_INTERNAL_RESOLUTION = new Vector2f(256, 144);
         public static Clock GAME_GAME_TIME = new Clock();
+        public static Clock GAME_SPEEDRUN_TIMER;
         public static int GAME_NUMBER_TICKS = 0;
         public static uint GAME_MAX_FPS = 0;
         public static uint GAME_MINIMIZED_FPS = 30;
@@ -75,6 +77,7 @@ namespace antiplatformer
         public static int GAME_PLAYER_INDEX = 0;
         public static bool GAME_CAN_LOAD = true;
         private Image GAME_WINDOW_ICON = new Image("res/icon.png");
+        public static Gui gui;
 
         private static RenderWindow renderWindow;
         private VideoMode videomode;
@@ -125,6 +128,7 @@ namespace antiplatformer
             {
                 renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
                 renderWindow.SetIcon(64, 64, GAME_WINDOW_ICON.Pixels);
+                gui = new Gui(renderWindow);
                 utils.Log("Created the main window");
             }
             catch(Exception e)
@@ -219,7 +223,10 @@ namespace antiplatformer
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
 
-            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tuborial.apscene");
+            gui.TabKeyUsageEnabled = true;
+
+            GAME_SPEEDRUN_TIMER = new Clock();
+            GAME_SCENE_MANAGER.loadScene("res/levels/world1/tutorial.apscene");
         }
 
         public void update()
@@ -291,6 +298,7 @@ namespace antiplatformer
                     foreach (entity e in killedEntities)
                     {
                         entityList.Remove(e);
+                        GAME_PLAYER_INDEX = entityList.Count - 1;
                     }
 
                     killedEntities.Clear();
@@ -310,12 +318,10 @@ namespace antiplatformer
 
                 tickEntities();
 
-                GAME_PLAYER_INDEX = entityList.Count - 1;
-
                 GAME_PLAYER_POSITION = entityList[GAME_PLAYER_INDEX].myClass.position;
                 camera.Center = GAME_PLAYER_POSITION;
 
-                debugText.DisplayedString = "The anti-Platformer V" + GAME_VERSION + " Debug menu\nFPS:" + (int)fps + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds();
+                debugText.DisplayedString = "The anti-Platformer V" + GAME_VERSION + " Debug menu\nFPS:" + (int)fps + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds() + "\nSpeedrun Timer: " + GAME_SPEEDRUN_TIMER.ElapsedTime.AsSeconds().ToString();
 
                 GAME_CAN_LOAD = true;
             }
@@ -339,6 +345,7 @@ namespace antiplatformer
                     renderWindow.Close();
                     renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
                     renderWindow.SetFramerateLimit(GAME_MAX_FPS);
+                    gui.Target = renderWindow;
                     deltaTime = 0;
                     deltaClock.Restart();
                 }
@@ -349,6 +356,7 @@ namespace antiplatformer
                     renderWindow.Close();
                     renderWindow = new RenderWindow(VideoMode.DesktopMode, "...this is a fullscreen window how are you seeing this", Styles.Fullscreen);
                     renderWindow.SetFramerateLimit(GAME_MAX_FPS);
+                    gui.Target = renderWindow;
                     deltaTime = 0;
                     deltaClock.Restart();
                 }
@@ -500,6 +508,7 @@ namespace antiplatformer
             }
             else
             {
+                gui.Draw();
                 foreach (Sprite element in ui.sprites)
                 {
                     renderWindow.Draw(element);
@@ -540,24 +549,6 @@ namespace antiplatformer
                 return; });
 
             shake.Start();
-        }
-
-        public static bool loadNewScene(string path)
-        {
-            try
-            {
-                utils.Log("Loading a new scene with path: " + path);
-                GAME_PLAYER_INDEX = 0;
-
-                GAME_SCENE_MANAGER.loadScene(path);
-
-                return true;
-            }
-            catch (Exception e)
-            {
-                utils.LogError("Cannot load scene, heres the exception if it helps: " + e);
-                return false;
-            }
         }
 
         public void shutdown()

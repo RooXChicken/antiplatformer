@@ -45,6 +45,11 @@ namespace antiplatformer.entityLogic
 
         public Sprite getSprite() { return sprite; }
 
+        public void parseInput()
+        {
+
+        }
+
         public void onSpawn()
         {
             //nothing lol
@@ -54,7 +59,8 @@ namespace antiplatformer.entityLogic
         {
             if(sprite.GetGlobalBounds().Intersects(Game.entityList[Game.GAME_PLAYER_INDEX].myClass.sprite.GetGlobalBounds()))
             {
-                Game.loadNewScene(newScenePath);
+                Game.GAME_PLAYER_INDEX = 0;
+                Game.GAME_SCENE_MANAGER.loadScene(newScenePath);
                 destroy = true;
             }
         }

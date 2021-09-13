@@ -92,6 +92,27 @@ namespace antiplatformer.entityLogic
         public Sprite getSprite() { return sprite; }
         public void getTilemap(TileMap tilemap) { collisionMap = tilemap; }
 
+        public void parseInput()
+        {
+            position = new Vector2f(float.Parse(entityData["x"].ToString()), float.Parse(entityData["y"].ToString()));
+            maxHealth = Int32.Parse(entityData["maxHealth"].ToString());
+            health = Int32.Parse(entityData["currentHealth"].ToString());
+            movementSpeed = float.Parse(entityData["movementSpeed"].ToString());
+            crouchSpeed = float.Parse(entityData["crouchSpeed"].ToString());
+            gravitySpeed = float.Parse(entityData["gravitySpeed"].ToString());
+
+            try
+            {
+                position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+                currentCheckpoint = position;
+                deathPlane = Int32.Parse(input[2]);
+            }
+            catch (Exception e)
+            {
+                utils.LogError("Player did not have position or death plane variables as paramaters! Here is the exception if it helps: " + e);
+            }
+        }
+
         public void onSpawn()
         {
             jumpSound = new Sound(jumpSoundBuf);

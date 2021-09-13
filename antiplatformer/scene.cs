@@ -11,7 +11,9 @@ namespace antiplatformer
     {
         public string levelPath = "PLACEHOLDER";
         public string currentScene = "PLACEHOLDER";
-        private string levelName = "ERROR";
+        public string levelName = "ERROR";
+        public string skyboxPath = "ERROR";
+        public string musicPath = "none";
 
         public scene()
         {
@@ -39,6 +41,7 @@ namespace antiplatformer
                 }
                 else if(item.Contains("levelname="))
                 {
+                    levelName = item.Substring(10);
                     Game.drpc.Update("Singleplayer V" + Game.GAME_VERSION, "In level " + item.Substring(10));
                 }
                 else if(item.Contains("music="))
@@ -59,6 +62,7 @@ namespace antiplatformer
                     else
                     {
                         string[] input = item.Split('>');
+                        musicPath = input[0].Substring(6);
                         Game.GAME_CURRENT_MUSIC = new Music(input[0].Substring(6));
                         Game.GAME_CURRENT_MUSIC.Volume = Game.GAME_MAIN_AUDIO_VOLUME;
                         Game.GAME_CURRENT_MUSIC.Loop = Boolean.Parse(input[1]);
@@ -67,6 +71,7 @@ namespace antiplatformer
                 else if(item.Contains("skybox="))
                 {
                     Game.GAME_MAIN_SKYBOX = utils.loadSprite(item.Substring(7));
+                    skyboxPath = item.Substring(7);
                     Game.GAME_MAIN_SKYBOX.Position = new Vector2f(-1, 0);
                 }
                 else if(item.Contains("entity="))
@@ -82,27 +87,32 @@ namespace antiplatformer
                 Game.GAME_CURRENT_MUSIC.Play();
             }
 
-            int indexA = 0;
-            foreach (entity e in Game.entityList)
-            {
-                try
-                {
-                    if (e.myClass.id == 1)
-                    {
-                        Game.GAME_PLAYER_INDEX = indexA;
-                    }
-                    indexA++;
-                }
-                catch
-                {
-                    utils.LogError("Entity does not have tag id, whoops :P");
-                }
-            }
+            //int indexA = 0;
+            //foreach (entity e in Game.entityList)
+            //{
+            //    try
+            //    {
+            //        if (e.myClass.id == 1)
+            //        {
+            //            Game.GAME_PLAYER_INDEX = indexA;
+            //        }
+            //        indexA++;
+            //    }
+            //    catch
+            //    {
+            //        utils.LogError("Entity does not have tag id, whoops :P");
+            //    }
+            //}
+
+            Game.GAME_PLAYER_INDEX = 0;
+            Game.GAME_PLAYER_INDEX = Game.entityList.Count - 1;
 
             Game.entityList[Game.GAME_PLAYER_INDEX].myClass.getTilemap(Game.tilemap);
 
             Game.deltaClock.Restart();
             Game.deltaTime = 0;
+
+            Game.GAME_SPEEDRUN_TIMER.Restart();
 
             Game.isLoading = false;
         }

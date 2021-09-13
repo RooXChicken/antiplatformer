@@ -22,6 +22,11 @@ namespace antiplatformer.entityLogic
 
         public Sprite getSprite() { return sprite; }
 
+        public void parseInput()
+        {
+
+        }
+
         public void onSpawn()
         {
             sprite = utils.loadSprite("res/sprites/splashText.png");

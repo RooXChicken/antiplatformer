@@ -29,6 +29,11 @@ namespace antiplatformer.entityLogic
 
         public Sprite getSprite() { return sprite; }
 
+        public void parseInput()
+        {
+
+        }
+
         public void onSpawn(string paramaters)
         {
             state = paramaters;

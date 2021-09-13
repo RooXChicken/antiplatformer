@@ -17,13 +17,21 @@ namespace antiplatformer.entityLogic
         public decoration(string path)
         {
             input = path.Split('>');
-            spritePath = input[0];
+            spritePath = input[2];
             sprite = utils.loadSprite(spritePath);
 
-            sprite.Position = new Vector2f(float.Parse(input[1]), float.Parse(input[2]));
+            sprite.Position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
         }
 
         public Sprite getSprite() { return sprite; }
+
+        public void parseInput()
+        {
+            spritePath = input[2];
+            sprite = utils.loadSprite(spritePath);
+
+            sprite.Position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+        }
 
         public void onSpawn()
         {

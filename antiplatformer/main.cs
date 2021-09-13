@@ -6,7 +6,7 @@
         {
             //---LINUX ONLY---
             //it fixes random linux crashes, windows users comment out these lines please!
-            //XInitThreads();
+            XInitThreads();
             Game game = new Game(args);
 
             game.init();
@@ -21,7 +21,7 @@
 
         //---LINUX ONLY---
         //it fixes random linux crashes, windows users comment out these lines please!
-        //[System.Runtime.InteropServices.DllImport("X11")]
-        //extern public static int XInitThreads();
+        [System.Runtime.InteropServices.DllImport("X11")]
+        extern public static int XInitThreads();
     }
 }

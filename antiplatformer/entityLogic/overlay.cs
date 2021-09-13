@@ -21,6 +21,12 @@ namespace antiplatformer.entityLogic
 
         public Sprite getSprite() { return sprite; }
 
+        public void parseInput()
+        {
+            sprite = utils.loadSprite("res/misc/randomsprites/whiteScreen.png");
+            sprite.Color = new Color(byte.Parse(input[0]), byte.Parse(input[1]), byte.Parse(input[2]), byte.Parse(input[3]));
+        }
+
         public void onSpawn(string paramaters)
         {
             input = paramaters.Split('>');

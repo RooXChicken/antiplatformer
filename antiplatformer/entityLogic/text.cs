@@ -18,14 +18,23 @@ namespace antiplatformer.entityLogic
         public textEntity(string textInput)
         {
             input = textInput.Split('>');
-            position = new Vector2f(float.Parse(input[1]), float.Parse(input[2]));
-            textString = input[0];
+            position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+            textString = input[2];
             text = new Text(textString, Game.GAME_MAIN_FONT);
             text.Position = position;
             text.Scale = new Vector2f(float.Parse(input[3]), float.Parse(input[3]));
         }
 
         public Text getSprite() { return text; }
+
+        public void parseInput()
+        {
+            position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+            textString = input[2];
+            text = new Text(textString, Game.GAME_MAIN_FONT);
+            text.Position = position;
+            text.Scale = new Vector2f(float.Parse(input[3]), float.Parse(input[3]));
+        }
 
         public void onSpawn()
         {

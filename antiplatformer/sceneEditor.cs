@@ -4,12 +4,15 @@ using System.IO;
 using SFML.Graphics;
 using SFML.Window;
 using SFML.System;
+using TGUI;
+using System.Linq;
+using System.Threading;
+
 namespace antiplatformer
 {
     public class sceneEditor
     {
         public Sprite skybox;
-        public List<string> sceneData = new List<string>();
         private static Text debugText;
         public string levelPath = "ERROR";
         View cameraPosition = new View(new Vector2f(0f, 0f), Game.GAME_INTERNAL_RESOLUTION);
@@ -17,7 +20,11 @@ namespace antiplatformer
         float movementSpeed = 200;
 
         string entityGrabbedName;
+        int selectedEntityID = 0;
+        string updatedParams = "ERROR";
         bool isGrabbed = false;
+
+        int paramIndex = 0;
 
         Vector2f position = new Vector2f(0, 0);
         Vector2f mousePosition;
@@ -42,49 +49,99 @@ namespace antiplatformer
                 utils.LogWarn("Tried to stop music when it's not playing. This is normal, you can ignore this");
             }
 
-            sceneData = new List<string>();
-
-            sceneData.Add("level=res/levels/world1/level1/level1.map");
-            sceneData.Add("skybox=res/misc/randomsprites/skybox.png");
-            sceneData.Add("levelname=Level 1");
-            sceneData.Add("music=none");
-
             debugText = new Text("", Game.GAME_MAIN_FONT);
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
+
+            Game.gui.LoadWidgetsFromFile("res/gui/sceneeditor.gui");
+
+            //foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            //{
+            //    foreach (Button item in window.Widgets.OfType<Button>())
+            //    {
+            //        item.Pressed += (sender, es) => {
+            //            foreach (ChildWindow windoww in Game.gui.Widgets.OfType<ChildWindow>())
+            //            {
+            //                if (windoww.Name == "createEntity")
+            //                {
+            //                    windoww.Visible = true;
+            //                }
+            //            }
+            //        };
+            //    }
+            //}
+
+            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            {
+                foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                {
+                    switch (item.Name)
+                    {
+                        case "path":
+                            item.Text = Game.GAME_SCENE_MANAGER.levelPath;
+                            break;
+                        case "name":
+                            item.Text = Game.GAME_SCENE_MANAGER.levelName;
+                            break;
+                        case "skybox":
+                            item.Text = Game.GAME_SCENE_MANAGER.skyboxPath;
+                            break;
+                        case "music":
+                            item.Text = Game.GAME_SCENE_MANAGER.musicPath;
+                            break;
+
+                    }
+                }
+            }
 
             Game.drpc.Update("Scene editor", "Working on a scene...");
         }
 
         public void update(float deltaTime)
         {
-            mousePosition = Game.getRenderWindow().MapPixelToCoords(new Vector2i(Mouse.GetPosition().X, Mouse.GetPosition().Y));
-            mousePosition.X = mousePosition.X + position.X - (Game.GAME_INTERNAL_RESOLUTION.X / 2);
-            mousePosition.Y = mousePosition.Y + position.Y - Game.GAME_INTERNAL_RESOLUTION.Y;
+            mousePosition = Game.getRenderWindow().MapPixelToCoords(new Vector2i(Mouse.GetPosition(Game.getRenderWindow()).X, Mouse.GetPosition(Game.getRenderWindow()).Y));
+            mousePosition.X = mousePosition.X + position.X - (Game.GAME_INTERNAL_RESOLUTION.X / 2) + 1;
+            mousePosition.Y = mousePosition.Y + position.Y - (Game.GAME_INTERNAL_RESOLUTION.Y / 2);
 
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Left) || Keyboard.IsKeyPressed(Keyboard.Key.A))
+            bool hasFocus = false;
+
+            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
             {
-                position.X -= movementSpeed * deltaTime;
-            }
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Right) || Keyboard.IsKeyPressed(Keyboard.Key.D))
-            {
-                position.X += movementSpeed * deltaTime;
-            }
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Up) || Keyboard.IsKeyPressed(Keyboard.Key.W))
-            {
-                position.Y -= movementSpeed * deltaTime;
-            }
-            if (Keyboard.IsKeyPressed(Keyboard.Key.Down) || Keyboard.IsKeyPressed(Keyboard.Key.S))
-            {
-                position.Y += movementSpeed * deltaTime;
+                foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                {
+                    if (item.Focus)
+                    {
+                        hasFocus = true;
+                    }
+                }
             }
 
-            if (Keyboard.IsKeyPressed(Keyboard.Key.LControl))
+            if(!hasFocus)
             {
-                movementSpeed = 400;
+                if (Keyboard.IsKeyPressed(Keyboard.Key.Left) || Keyboard.IsKeyPressed(Keyboard.Key.A))
+                {
+                    position.X -= movementSpeed * deltaTime;
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.Right) || Keyboard.IsKeyPressed(Keyboard.Key.D))
+                {
+                    position.X += movementSpeed * deltaTime;
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.Up) || Keyboard.IsKeyPressed(Keyboard.Key.W))
+                {
+                    position.Y -= movementSpeed * deltaTime;
+                }
+                if (Keyboard.IsKeyPressed(Keyboard.Key.Down) || Keyboard.IsKeyPressed(Keyboard.Key.S))
+                {
+                    position.Y += movementSpeed * deltaTime;
+                }
+
+                if (Keyboard.IsKeyPressed(Keyboard.Key.LControl))
+                {
+                    movementSpeed = 400;
+                }
+                else
+                    movementSpeed = 200;
             }
-            else
-                movementSpeed = 200;
 
             cameraPosition.Center = position;
 
@@ -96,37 +153,113 @@ namespace antiplatformer
 
             debugText.DisplayedString = "Mouse pos: " + mousePosition.X + ", " + mousePosition.Y + "\nIsGrabbed: " + isGrabbed;
 
-            foreach (entity e in Game.entityList)
+            int index = 0;
+            try
             {
-                if (isGrabbed)
+                foreach (entity e in Game.entityList)
                 {
-                    if (e.myClass.name == entityGrabbedName && e.myClass.input == grabbedEntityInput)
+                    if (e.myClass.name == entityGrabbedName && selectedEntityID == index)
                     {
-                        if (Mouse.IsButtonPressed(Mouse.Button.Left))
+                        foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
                         {
-                            e.myClass.position = mousePosition;
-                            e.myClass.sprite.Position = mousePosition;
+                            foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                            {
+                                if(item.Name == "entity")
+                                {
+                                    if (grabbedEntityInput != item.Text.Split('\n'))
+                                    {
+                                        item.Text.Split('\n');
+                                        e.myClass.input = item.Text.Split('\n');
+                                        e.myClass.parseInput();
+                                    }
+                                }
+                            }
                         }
-                        else
-                            isGrabbed = false;
+
+                        if (isGrabbed)
+                        {
+                            if (Mouse.IsButtonPressed(Mouse.Button.Left))
+                            {
+                                e.myClass.position = mousePosition;
+                                e.myClass.sprite.Position = mousePosition;
+                                foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                                {
+                                    foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                                    {
+                                        if(item.Name == "entity")
+                                        {
+                                            item.Text = "";
+                                            int indexx = 0;
+                                            foreach (string i in e.myClass.input)
+                                            {
+                                                if (indexx == 0)
+                                                    item.Text += e.myClass.position.X.ToString() + "\n";
+                                                else if (indexx == 1)
+                                                    item.Text += e.myClass.position.Y.ToString() + "\n";
+                                                else
+                                                    if (i != "")
+                                                    item.Text += i + "\n";
+                                                indexx++;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                isGrabbed = false;
+                            }
+                        }
                     }
+
+                    if ((Mouse.IsButtonPressed(Mouse.Button.Left) && mousePos.Intersects(e.myClass.sprite.GetGlobalBounds())) && !isGrabbed)
+                    {
+                        isGrabbed = true;
+                        grabbedEntityInput = e.myClass.input;
+                        entityGrabbedName = e.myClass.name;
+                        e.myClass.position = mousePosition;
+                        e.myClass.sprite.Position = mousePosition;
+                        selectedEntityID = index;
+                        foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                        {
+                            foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                            {
+                                if(item.Name == "entity")
+                                {
+                                    item.Text = "";
+                                    foreach (string i in e.myClass.input)
+                                    {
+                                        if (i != "")
+                                            item.Text += i + "\n";
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if (!Mouse.IsButtonPressed(Mouse.Button.Left))
+                        isGrabbed = false;
+
+                    index++;
                 }
-                if ((Mouse.IsButtonPressed(Mouse.Button.Left) && mousePos.Intersects(e.myClass.sprite.GetGlobalBounds())) && !isGrabbed)
-                {
-                    isGrabbed = true;
-                    grabbedEntityInput = e.myClass.input;
-                    entityGrabbedName = e.myClass.name;
-                    e.myClass.position = mousePosition;
-                    e.myClass.sprite.Position = mousePosition;
-                }
+            }
+            catch (Exception e)
+            {
+                utils.LogError("Failed to update the scene editor. Exception: " + e);
             }
         }
 
         public void exit()
         {
             Game.entityList[Game.GAME_PLAYER_INDEX].myClass.velocity = new Vector2f(0, 0);
+            selectedEntityID = 0;
+            isGrabbed = false;
+            grabbedEntityInput = new string[1];
+            entityGrabbedName = "ERROR";
 
             save("test.apscene");
+
+            Game.gui.RemoveAllWidgets();
 
             Game.deltaTime = 0;
             Game.deltaClock.Restart();
@@ -137,9 +270,26 @@ namespace antiplatformer
             string finalInput = "";
             try
             {
-                foreach (string item in sceneData)
+                foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
                 {
-                    finalInput += item + "\n";
+                    foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                    {
+                        switch (item.Name)
+                        {
+                            case "path":
+                                finalInput += "level=" + item.Text + "\n";
+                                break;
+                            case "name":
+                                finalInput += "levelname=" + item.Text + "\n";
+                                break;
+                            case "skybox":
+                                finalInput += "skybox=" + item.Text + "\n";
+                                break;
+                            case "music":
+                                finalInput += "music=" + item.Text + "\n";
+                                break;
+                        }
+                    }
                 }
 
                 foreach (entity e in Game.entityList)
@@ -156,7 +306,7 @@ namespace antiplatformer
                     switch (e.myClass.name.ToLower())
                     {
                         case "text":
-                            finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.textString, e.myClass.position.X.ToString(), e.myClass.position.Y.ToString(), e.myClass.text.Scale.X.ToString() });
+                            finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.position.X.ToString(), e.myClass.position.Y.ToString(), e.myClass.textString, e.myClass.text.Scale.X.ToString() });
                             break;
                         case "endportal":
                             finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.position.X.ToString(), e.myClass.position.Y.ToString(), e.myClass.facingRight.ToString(), e.myClass.newScenePath });
@@ -165,7 +315,7 @@ namespace antiplatformer
                             finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.position.X.ToString(), e.myClass.position.Y.ToString() });
                             break;
                         case "decoration":
-                            finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.spritePath, e.myClass.position.X.ToString(), e.myClass.position.Y.ToString() });
+                            finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.position.X.ToString(), e.myClass.position.Y.ToString(), e.myClass.spritePath });
                             break;
                         case "dustsprite":
                             finalInput += "\nparams=" + string.Join(">", new string[] { e.myClass.position.X.ToString(), e.myClass.position.Y.ToString(), e.myClass.position2.ToString(), e.myClass.position3.ToString(), e.myClass.movementSpeed.ToString() });
@@ -189,7 +339,24 @@ namespace antiplatformer
                 utils.LogError("Failed to write level to the scene! Exception: " + e);
             }
 
-            File.WriteAllText("test.apscene", finalInput);
+            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            {
+                foreach (TextBox item in window.Widgets.OfType<TextBox>())
+                {
+                    if (item.Name == "save")
+                    {
+                        if (item.Text != "")
+                        {
+                            File.WriteAllText(item.Text, finalInput);
+                        }
+                        else
+                        {
+                            utils.Log("Please specify a scene path!");
+                            File.WriteAllText("res/scene.apscene", finalInput);
+                        }
+                    }
+                }
+            }
 
             utils.Log("Saved the scene successfully!");
         }
@@ -213,6 +380,7 @@ namespace antiplatformer
 
             Game.getRenderWindow().SetView(Game.uiCamera);
             Game.getRenderWindow().Draw(debugText);
+            Game.gui.Draw();
 
             Game.getRenderWindow().Display();
         }

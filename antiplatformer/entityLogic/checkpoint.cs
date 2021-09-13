@@ -17,7 +17,8 @@ namespace antiplatformer.entityLogic
 
         public Vector2f position = new Vector2f(0, 0);
         public Vector2f velocity = new Vector2f(0, 0);
-        public Sprite sprite = utils.loadSprite("res/misc/randomsprites/empty.png");
+        public Sprite checkSprite = utils.loadSprite("res/misc/randomsprites/empty.png");
+        public Sprite sprite = utils.loadSprite("res/missing.png");
         public int maxHealth = 0;
         public int health = 0;
 
@@ -26,13 +27,22 @@ namespace antiplatformer.entityLogic
             input = paramaters.Split('>');
 
             position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+            sprite.Position = position;
+            checkSprite.Position = position;
         }
 
-        public Sprite getSprite() { return sprite; }
+        public Sprite getSprite() { return checkSprite; }
 
         public void onSpawn()
         {
 
+        }
+
+        public void parseInput()
+        {
+            position = new Vector2f(float.Parse(input[0]), float.Parse(input[1]));
+            sprite.Position = position;
+            checkSprite.Position = position;
         }
 
         public void update(float deltaTime)
