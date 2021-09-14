@@ -4,15 +4,15 @@
     {
         public static void Main(string[] args)
         {
-            #if !WINDOWS
+#if !WINDOWS //Thank you to NedoProgrammer on GitHub for this fix!
             XInitThreads();
-            #endif
-                
+#endif
+
             Game game = new Game(args);
 
             game.init();
 
-            while(game.isRunning())
+            while (game.isRunning())
             {
                 game.update();
             }
@@ -20,9 +20,9 @@
             game.shutdown();
         }
 
-        #if !WINDOWS
+#if !WINDOWS
         [System.Runtime.InteropServices.DllImport("X11")]
         extern public static int XInitThreads();
-        #endif
+#endif
     }
 }

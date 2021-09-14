@@ -553,21 +553,28 @@ namespace antiplatformer
 
         public void shutdown()
         {
-            camera.Dispose();
-            uiCamera.Dispose();
-            utils.Log("Unloaded the cameras");
-            ui.unload();
-            utils.Log("Unloaded the UI");
-            entityList.Clear();
-            utils.Log("Unloaded the entities");
-            debugText.Dispose();
-            deltaClock.Dispose();
-            framerate_clock.Dispose();
-            utils.Log("Unloaded the framerate clocks");
-            drpc.Deinitialize();
-            utils.Log("Unloaded DiscordRPC");
-            renderWindow.Dispose();
-            utils.Log("Unloaded the window");
+            try
+            {
+                camera.Dispose();
+                uiCamera.Dispose();
+                utils.Log("Unloaded the cameras");
+                ui.unload();
+                utils.Log("Unloaded the UI");
+                entityList.Clear();
+                utils.Log("Unloaded the entities");
+                debugText.Dispose();
+                deltaClock.Dispose();
+                framerate_clock.Dispose();
+                utils.Log("Unloaded the framerate clocks");
+                drpc.Deinitialize();
+                utils.Log("Unloaded DiscordRPC");
+                renderWindow.Dispose();
+                utils.Log("Unloaded the window");
+            }
+            catch (Exception e)
+            {
+                utils.LogWarn("Object unloaded was never loaded! Exception: " + e);
+            }
         }
     }
 }

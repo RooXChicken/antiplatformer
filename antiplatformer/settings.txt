@@ -1,0 +1,4 @@
+version=A-0.2.1
+volume=5.0
+maxfps=0
+unfocusedfps=30
