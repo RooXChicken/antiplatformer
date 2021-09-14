@@ -4,9 +4,10 @@
     {
         public static void Main(string[] args)
         {
-            //---LINUX ONLY---
-            //it fixes random linux crashes, windows users comment out these lines please!
+            #if !WINDOWS
             XInitThreads();
+            #endif
+                
             Game game = new Game(args);
 
             game.init();
@@ -19,9 +20,9 @@
             game.shutdown();
         }
 
-        //---LINUX ONLY---
-        //it fixes random linux crashes, windows users comment out these lines please!
+        #if !WINDOWS
         [System.Runtime.InteropServices.DllImport("X11")]
         extern public static int XInitThreads();
+        #endif
     }
 }
