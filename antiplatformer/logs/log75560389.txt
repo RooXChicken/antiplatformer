@@ -1,0 +1,11 @@
+0[INFO] Starting game...
+0[FATAL] Failed to open the window. Exception: System.DllNotFoundException: Unable to load shared library 'ctgui-0.8.dll' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: libctgui-0.8.dll: cannot open shared object file: No such file or directory
+   at TGUI.Gui.tguiGui_create()
+   at TGUI.Gui..ctor()
+   at TGUI.Gui..ctor(RenderWindow window)
+   at antiplatformer.Game.init() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 64 | Can't recover!
+0[INFO] Created the cameras
+11110[INFO] Unloaded the cameras
+11110[INFO] Unloaded the entities
+11110[WARN] Object unloaded was never loaded! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.shutdown() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 472

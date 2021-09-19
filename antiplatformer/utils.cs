@@ -10,13 +10,13 @@ namespace antiplatformer
 
         public static void Log(string message)
         {
-            Console.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[INFO] " + message);
+            Console.WriteLine(gameManager.GAME_TICKS.ToString() + "[INFO] " + message);
 
             try
             {
                 using (StreamWriter sw = File.AppendText(logPath))
                 {
-                    sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[INFO] " + message);
+                    sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[INFO] " + message);
                 }
             }
             catch (Exception e)
@@ -31,7 +31,7 @@ namespace antiplatformer
             {
                 using (StreamWriter sw = File.AppendText(logPath))
                 {
-                    sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[INFO] " + message);
+                    sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[INFO] " + message);
                 }
             }
             catch (Exception e)
@@ -42,13 +42,13 @@ namespace antiplatformer
 
         public static void LogWarn(string message)
         {
-            Console.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[WARN] " + message);
+            Console.WriteLine(gameManager.GAME_TICKS.ToString() + "[WARN] " + message);
 
             try
             {
                 using (StreamWriter sw = File.AppendText(logPath))
                 {
-                    sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[WARN] " + message);
+                    sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[WARN] " + message);
                 }
             }
             catch (Exception e)
@@ -59,13 +59,13 @@ namespace antiplatformer
 
         public static void LogError(string message)
         {
-            Console.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[ERROR] " + message);
+            Console.WriteLine(gameManager.GAME_TICKS.ToString() + "[ERROR] " + message);
 
             try
             {
                 using (StreamWriter sw = File.AppendText(logPath))
                 {
-                    sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[ERROR] " + message);
+                    sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[ERROR] " + message);
                 }
             }
             catch (Exception e)
@@ -76,14 +76,14 @@ namespace antiplatformer
 
         public static void LogFatal(string message, bool canRecover)
         {
-            Console.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[FATAL] " + message);
+            Console.WriteLine(gameManager.GAME_TICKS.ToString() + "[FATAL] " + message);
             if(canRecover)
             {
                 try
                 {
                     using (StreamWriter sw = File.AppendText(logPath))
                     {
-                        sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[FATAL] " + message);
+                        sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[FATAL] " + message);
                     }
                 }
                 catch (Exception e)
@@ -96,7 +96,7 @@ namespace antiplatformer
                 {
                     using (StreamWriter sw = File.AppendText(logPath))
                     {
-                        sw.WriteLine(Game.GAME_NUMBER_TICKS.ToString() + "[FATAL] " + message + " | Can't recover!");
+                        sw.WriteLine(gameManager.GAME_TICKS.ToString() + "[FATAL] " + message + " | Can't recover!");
                     }
                 }
                 catch (Exception e)

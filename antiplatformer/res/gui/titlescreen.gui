@@ -1,0 +1,39 @@
+Renderer.1 {
+    texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Button.settings {
+    Position = (410, 440);
+    Size = (421, 80);
+    Text = "settings (not added)";
+    TextSize = 40;
+    renderer = &1;
+}
+
+Button.quit {
+    Position = (510, 530);
+    Size = (221, 80);
+    Text = quit;
+    TextSize = 40;
+    renderer = &1;
+}
+
+Button.start {
+    Position = (490, 260);
+    Size = (261, 80);
+    Text = start;
+    TextSize = 40;
+    renderer = &1;
+}
+
+Button.multiplayer {
+    Position = (430, 350);
+    Size = (381, 80);
+    Text = "play multiplayer!";
+    TextSize = 40;
+    renderer = &1;
+}

@@ -8,7 +8,7 @@
             "name": "Debug",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "publish",
+            "preLaunchTask": "build",
             "program": "${workspaceFolder}/antiplatformer/bin/Debug/net5.0/antiplatformer.dll",
             "args": [],
             "cwd": "${workspaceFolder}/antiplatformer",

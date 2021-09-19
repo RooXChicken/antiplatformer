@@ -1,0 +1,29 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+353[INFO] Loaded the font
+353[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+353[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+353[INFO] Updated discord rich presence
+353[INFO] Loaded entity with data: checkpoint | 300>150
+353[INFO] Loaded entity with data: checkpoint | 480>150
+353[INFO] Loaded entity with data: checkpoint | 800>150
+353[INFO] Loaded entity with data: checkpoint | 1125>150
+353[INFO] Loaded entity with data: checkpoint | 1350>140
+353[INFO] Loaded entity with data: checkpoint | 1710>120
+353[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+353[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+353[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+353[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+353[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+353[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+353[INFO] Loaded entity with data: player | 135>150>350
+959[INFO] Updated discord rich presence
+1276[INFO] Please specify a scene path! Not saving any changes!
+1276[INFO] Saved the scene successfully!
+54839[INFO] Unloaded the cameras
+54839[INFO] Unloaded the UI
+54839[INFO] Unloaded the entities
+54839[INFO] Unloaded the framerate clocks
+54839[INFO] Unloaded DiscordRPC
+54839[INFO] Unloaded the window

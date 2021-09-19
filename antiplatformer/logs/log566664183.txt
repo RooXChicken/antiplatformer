@@ -1,0 +1,20 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+1594[WARN] Tried to stop music when it's not playing. This is normal, you can ignore this
+1594[INFO] Updated discord rich presence
+12932[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'antiplatformer.entityLogic.splashText' does not contain a definition for 'velocity'
+   at CallSite.Target(Closure , CallSite , Object , Vector2f )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at antiplatformer.sceneEditor.exit() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\sceneEditor.cs:line 254
+   at antiplatformer.Game.events() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 418
+   at antiplatformer.Game.update() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 236
+13951[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'antiplatformer.entityLogic.splashText' does not contain a definition for 'velocity'
+   at CallSite.Target(Closure , CallSite , Object , Vector2f )
+   at antiplatformer.sceneEditor.exit() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\sceneEditor.cs:line 254
+   at antiplatformer.Game.events() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 418
+   at antiplatformer.Game.update() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 236
+16198[INFO] Unloaded the cameras
+16198[WARN] Object unloaded was never loaded! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.ui.unload() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\ui.cs:line 68
+   at antiplatformer.Game.shutdown() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 562

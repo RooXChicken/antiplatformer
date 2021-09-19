@@ -30,7 +30,7 @@ namespace antiplatformer.entityLogic
         public void onSpawn()
         {
             sprite = utils.loadSprite("res/sprites/splashText.png");
-            sprite.Position = new Vector2f(Game.GAME_INTERNAL_RESOLUTION.X / 3, Game.GAME_INTERNAL_RESOLUTION.Y / 2.25f);
+            sprite.Position = new Vector2f(gameManager.GAME_INTERNAL_RESOLUTION.X / 3, gameManager.GAME_INTERNAL_RESOLUTION.Y / 2.25f);
         }
 
         public void update(float deltaTime)

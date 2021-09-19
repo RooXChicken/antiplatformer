@@ -7,7 +7,8 @@
    <DefineConstants>WINDOWS</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="TGUI.Net.win-x64" Version="0.8.8.17"/>
-    <PackageReference Include="DiscordRichPresence" Version="1.143.0"/>
+    <PackageReference Include="LiteNetLib" Version="0.9.5" />
+    <PackageReference Include="TGUI.Net.win-x64" Version="0.8.8.17" />
+    <PackageReference Include="DiscordRichPresence" Version="1.143.0" />
   </ItemGroup>
 </Project>

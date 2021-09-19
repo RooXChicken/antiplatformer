@@ -1,0 +1,7 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+4414[INFO] Unloaded the cameras
+4414[WARN] Object unloaded was never loaded! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.ui.unload() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\ui.cs:line 68
+   at antiplatformer.Game.shutdown() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 562

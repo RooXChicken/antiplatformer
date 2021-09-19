@@ -1,0 +1,890 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+1834[INFO] Loaded the font
+1834[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+1834[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+1834[INFO] Updated discord rich presence
+1834[INFO] Loaded entity with data: checkpoint | 300>150
+1834[INFO] Loaded entity with data: checkpoint | 480>150
+1834[INFO] Loaded entity with data: checkpoint | 800>150
+1834[INFO] Loaded entity with data: checkpoint | 1125>150
+1834[INFO] Loaded entity with data: checkpoint | 1350>140
+1834[INFO] Loaded entity with data: checkpoint | 1710>120
+1834[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+1834[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+1834[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+1834[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+1834[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+1834[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+1834[INFO] Loaded entity with data: player | 135>150>350
+1835[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1835[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1836[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1836[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1837[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1837[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1838[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1838[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1839[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1839[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1840[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1840[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1841[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1841[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1842[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1842[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1843[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1843[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1844[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1844[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1845[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1845[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1846[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1846[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1847[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1847[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1848[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1848[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1849[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1849[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1850[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1850[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1851[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1851[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1852[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1852[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1853[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1853[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1854[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1854[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1855[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1855[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1856[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1856[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1857[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1857[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1858[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1858[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1859[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1859[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1860[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1860[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1861[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1861[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1862[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1862[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1863[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1863[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1864[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1864[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1865[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1865[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1866[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1866[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1867[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1867[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1868[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1868[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1869[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1869[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1870[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1870[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1871[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1871[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1872[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1872[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1873[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1873[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1874[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1874[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1875[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1875[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1876[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1876[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1877[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1877[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1878[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1878[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1879[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1879[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1880[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1880[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1881[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1881[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1882[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1882[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1883[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1883[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1884[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1884[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1885[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1885[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1886[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1886[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1887[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1887[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1888[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1888[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1889[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1889[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1890[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1890[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1891[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1891[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1892[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1892[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1893[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1893[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1894[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1894[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1895[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1895[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1896[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1896[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1897[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1897[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1898[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1898[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1899[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1899[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1900[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1900[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1901[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1901[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1902[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1902[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1903[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1903[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1904[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1904[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1905[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1905[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1906[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1906[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1907[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1907[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1908[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1908[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1909[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1909[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1910[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1910[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1911[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1911[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1912[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1912[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1913[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1913[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1914[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1914[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1915[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1915[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1916[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1916[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1917[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1917[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1918[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1918[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1919[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1919[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1920[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1920[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1921[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1921[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1922[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1922[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1923[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1923[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1924[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1924[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1925[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1925[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1926[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1926[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1927[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1927[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1928[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1928[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1929[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1929[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1930[ERROR] Failed to tick entities with exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.tickEntities() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 290
+1930[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'SFML.Graphics.Text' to 'SFML.Graphics.Sprite'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at antiplatformer.Game.mainRender() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 252
+1930[INFO] Unloaded the cameras
+1930[INFO] Unloaded the UI
+1930[INFO] Unloaded the entities
+1930[INFO] Unloaded the framerate clocks
+1930[INFO] Unloaded DiscordRPC
+1930[INFO] Unloaded the window

@@ -1,0 +1,371 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+8309[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.IO.FileNotFoundException: Could not find file '/run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/PLACEHOLDER'.
+File name: '/run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/PLACEHOLDER'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream.OpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at antiplatformer.scene.loadScene(String path) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/scene.cs:line 32
+   at antiplatformer.scene.reloadScene() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/scene.cs:line 25
+   at antiplatformer.gameManager.handleEvents(RenderWindow renderWindow) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/gameManager.cs:line 162
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 202
+8310[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8311[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8312[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8313[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8314[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8315[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8316[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8317[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8318[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8319[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8320[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8321[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8322[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8323[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8324[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8325[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8326[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8327[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8328[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8329[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8330[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8331[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8332[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8333[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8334[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8335[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8336[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8337[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8338[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8339[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8340[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8341[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8342[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8343[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8344[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8345[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8346[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8347[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8348[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8349[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8350[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8351[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8352[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8353[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8354[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8355[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8356[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8357[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8358[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8359[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8360[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8361[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8362[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8363[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8364[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8365[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8366[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8367[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8368[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8369[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8370[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8371[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8372[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8373[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8374[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8375[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8376[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8377[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8378[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8379[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8380[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8381[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8382[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8383[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8384[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8385[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8386[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8387[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8388[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8389[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8390[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8391[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 243
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 212
+8392[ERROR] splash screen broke lol i dont care
+11533[INFO] Loaded the font
+11533[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+11533[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+11533[INFO] Updated discord rich presence
+11533[INFO] Loaded entity with data: checkpoint | 300>150
+11533[INFO] Loaded entity with data: checkpoint | 480>150
+11533[INFO] Loaded entity with data: checkpoint | 800>150
+11533[INFO] Loaded entity with data: checkpoint | 1125>150
+11533[INFO] Loaded entity with data: checkpoint | 1350>140
+11533[INFO] Loaded entity with data: checkpoint | 1710>120
+11533[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+11533[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+11533[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+11533[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+11533[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+11533[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+11533[INFO] Loaded entity with data: player | 135>150>350
+11533[INFO] Created a new settings file
+11533[INFO] Connected to the server
+12737[INFO] Unloaded the cameras
+12737[INFO] Unloaded the entities
+12737[INFO] Unloaded the framerate clocks
+12737[INFO] Unloaded DiscordRPC
+12737[INFO] Unloaded the window
+12737[INFO] Unloaded the UI

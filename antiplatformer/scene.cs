@@ -42,37 +42,26 @@ namespace antiplatformer
                 else if(item.Contains("levelname="))
                 {
                     levelName = item.Substring(10);
-                    Game.drpc.Update("Singleplayer V" + Game.GAME_VERSION, "In level " + item.Substring(10));
+                    gameManager.drpc.Update("Singleplayer V" + gameManager.GAME_VERSION, "In level " + item.Substring(10));
                 }
                 else if(item.Contains("music="))
                 {
                     if(item == "music=none")
                     {
-                        try
-                        {
-                            Game.GAME_CURRENT_MUSIC.Stop();
-                            Game.GAME_CURRENT_MUSIC.Dispose();
-                            Game.GAME_CURRENT_MUSIC = null;
-                        }
-                        catch
-                        {
-                            utils.LogWarn("Tried to stop music when it's not playing. This is normal, you can ignore this");
-                        }
+                        audioManager.stopMusic("generic");
                     }
                     else
                     {
                         string[] input = item.Split('>');
                         musicPath = input[0].Substring(6);
-                        Game.GAME_CURRENT_MUSIC = new Music(input[0].Substring(6));
-                        Game.GAME_CURRENT_MUSIC.Volume = Game.GAME_MAIN_AUDIO_VOLUME;
-                        Game.GAME_CURRENT_MUSIC.Loop = Boolean.Parse(input[1]);
+                        audioManager.loadSong(input[0].Substring(6), "generic", Boolean.Parse(input[1]));
                     }
                 }
                 else if(item.Contains("skybox="))
                 {
-                    Game.GAME_MAIN_SKYBOX = utils.loadSprite(item.Substring(7));
+                    Game.GAME_SKYBOX = utils.loadSprite(item.Substring(7));
                     skyboxPath = item.Substring(7);
-                    Game.GAME_MAIN_SKYBOX.Position = new Vector2f(-1, 0);
+                    Game.GAME_SKYBOX.Position = new Vector2f(-1, 0);
                 }
                 else if(item.Contains("entity="))
                 {
@@ -82,39 +71,17 @@ namespace antiplatformer
                 index++;
             }
 
-            if (Game.GAME_CURRENT_MUSIC != null)
-            {
-                Game.GAME_CURRENT_MUSIC.Play();
-            }
-
-            //int indexA = 0;
-            //foreach (entity e in Game.entityList)
-            //{
-            //    try
-            //    {
-            //        if (e.myClass.id == 1)
-            //        {
-            //            Game.GAME_PLAYER_INDEX = indexA;
-            //        }
-            //        indexA++;
-            //    }
-            //    catch
-            //    {
-            //        utils.LogError("Entity does not have tag id, whoops :P");
-            //    }
-            //}
+            audioManager.playMusic("generic");
 
             Game.GAME_PLAYER_INDEX = 0;
             Game.GAME_PLAYER_INDEX = Game.entityList.Count - 1;
 
             Game.entityList[Game.GAME_PLAYER_INDEX].myClass.getTilemap(Game.tilemap);
 
-            Game.deltaClock.Restart();
-            Game.deltaTime = 0;
+            gameManager.deltaClock.Restart();
+            gameManager.deltaTime = 0;
 
-            Game.GAME_SPEEDRUN_TIMER.Restart();
-
-            Game.isLoading = false;
+            gameManager.isLoading = false;
         }
     }
 }

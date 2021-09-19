@@ -1,0 +1,33 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+15195[ERROR] splash screen broke lol i dont care
+20907[ERROR] Failed to start server: The port was not a number ya doofus. Exception: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at antiplatformer.Game.<>c__DisplayClass26_1.<initMultiplayer>b__0(Object s, SignalArgsString e) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 157
+20907[INFO] Loaded the font
+20907[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+20907[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+20907[INFO] Updated discord rich presence
+20907[INFO] Loaded entity with data: checkpoint | 300>150
+20907[INFO] Loaded entity with data: checkpoint | 480>150
+20907[INFO] Loaded entity with data: checkpoint | 800>150
+20907[INFO] Loaded entity with data: checkpoint | 1125>150
+20907[INFO] Loaded entity with data: checkpoint | 1350>140
+20907[INFO] Loaded entity with data: checkpoint | 1710>120
+20907[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+20907[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+20907[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+20907[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+20907[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+20907[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+20907[INFO] Loaded entity with data: player | 135>150>350
+20907[INFO] Created a new settings file
+22193[INFO] Unloaded the cameras
+22193[INFO] Unloaded the entities
+22193[INFO] Unloaded the framerate clocks
+22193[INFO] Unloaded DiscordRPC
+22193[INFO] Unloaded the window
+22193[INFO] Unloaded the UI

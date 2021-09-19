@@ -1,0 +1,40 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+1616[INFO] Loaded the font
+1616[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+1616[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+1616[INFO] Updated discord rich presence
+1616[INFO] Loaded entity with data: checkpoint | 300>150
+1616[INFO] Loaded entity with data: checkpoint | 480>150
+1616[INFO] Loaded entity with data: checkpoint | 800>150
+1616[INFO] Loaded entity with data: checkpoint | 1125>150
+1616[INFO] Loaded entity with data: checkpoint | 1350>140
+1616[INFO] Loaded entity with data: checkpoint | 1710>120
+1616[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+1616[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+1616[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+1616[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+1616[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+1616[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+1616[INFO] Loaded entity with data: player | 135>150>350
+6897[INFO] Loaded a tilemap with path: res/levels/world1/level1/level1.map
+6897[INFO] Loaded level with path: res/levels/world1/level1/level1.map
+6897[INFO] Updated discord rich presence
+6897[INFO] Loaded entity with data: checkpoint | 450>170
+6897[INFO] Loaded entity with data: checkpoint | 660>170
+6897[INFO] Loaded entity with data: checkpoint | 765>178
+6897[INFO] Loaded entity with data: checkpoint | 860>178
+6897[INFO] Loaded entity with data: checkpoint | 1160>170
+6897[INFO] Loaded entity with data: endportal | 1505>184>false>res/levels/world1/tutorial.apscene
+6897[INFO] Loaded entity with data: decoration | 1700>-100>res/misc/randomsprites/decorations/tree.png
+6897[INFO] Loaded entity with data: dustsprite | 200>195>220>180>25
+6897[INFO] Loaded entity with data: text | 160>145>This is a dust sprite.>0.15
+6897[INFO] Loaded entity with data: text | 160>150>Jump on its head to kill it>0.15
+6897[INFO] Loaded entity with data: player | 135>150>350
+9278[INFO] Unloaded the cameras
+9278[INFO] Unloaded the UI
+9278[INFO] Unloaded the entities
+9278[INFO] Unloaded the framerate clocks
+9278[INFO] Unloaded DiscordRPC
+9278[INFO] Unloaded the window

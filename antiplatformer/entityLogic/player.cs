@@ -29,6 +29,8 @@ namespace antiplatformer.entityLogic
         public Clock damageTimer = new Clock();
         public bool canBeDamaged = false;
 
+        public string currentAnimation = "NULL";
+
         public float movementSpeed = 100;
         public float crouchSpeed = 60;
         public float crouchJumpHeight = 140;
@@ -41,11 +43,6 @@ namespace antiplatformer.entityLogic
 
         private bool canJump;
         public int deathPlane = 250;
-
-        private SoundBuffer jumpSoundBuf = new SoundBuffer("res/sfx/jump1.ogg");
-        private Sound jumpSound;
-        private SoundBuffer hurtSoundBuf = new SoundBuffer("res/sfx/hurt1.ogg");
-        private Sound hurtSound;
 
         private animation walk = new animation("res/sprites/" + Game.GAME_MAIN_CHARACTER_NAME + "/walk/", true);
         private animation jump = new animation("res/sprites/" + Game.GAME_MAIN_CHARACTER_NAME + "/jump/", false);
@@ -115,10 +112,8 @@ namespace antiplatformer.entityLogic
 
         public void onSpawn()
         {
-            jumpSound = new Sound(jumpSoundBuf);
-            jumpSound.Volume = Game.GAME_MAIN_AUDIO_VOLUME;
-            hurtSound = new Sound(hurtSoundBuf);
-            hurtSound.Volume = Game.GAME_MAIN_AUDIO_VOLUME;
+            audioManager.loadSound("res/sfx/jump1.ogg", "jump");
+            audioManager.loadSound("res/sfx/hurt1.ogg", "hurt");
 
             sprite = utils.loadSprite("res/missing.png");
 
@@ -151,6 +146,7 @@ namespace antiplatformer.entityLogic
             {
                 if (sprite != dive)
                 {
+                    currentAnimation = "dive";
                     sprite = dive;
                     sprite.Color = Color.White;
                 }
@@ -160,6 +156,7 @@ namespace antiplatformer.entityLogic
                 walk.animate(0.125f);
                 if (sprite != walk.curFrame)
                 {
+                    currentAnimation = "walk";
                     sprite = walk.curFrame;
                     sprite.Color = Color.White;
                 }
@@ -169,6 +166,7 @@ namespace antiplatformer.entityLogic
                 jump.animate(0.075f);
                 if (sprite != jump.curFrame)
                 {
+                    currentAnimation = "jump";
                     sprite = jump.curFrame;
                     sprite.Color = Color.White;
                 }
@@ -177,6 +175,7 @@ namespace antiplatformer.entityLogic
             {
                 if(sprite != idle)
                 {
+                    currentAnimation = "idle";
                     sprite = idle;
                     sprite.Color = Color.White;
                 }
@@ -185,6 +184,7 @@ namespace antiplatformer.entityLogic
             {
                 if(sprite != crouch)
                 {
+                    currentAnimation = "crouch";
                     sprite = crouch;
                     sprite.Color = Color.White;
                 }
@@ -290,7 +290,7 @@ namespace antiplatformer.entityLogic
                 jump.restart();
                 velocity.Y = -jumpHeight;
                 isJumping = true;
-                jumpSound.Play();
+                audioManager.playSound("jump");
                 canJump = false;
             }
 
@@ -412,13 +412,13 @@ namespace antiplatformer.entityLogic
             nextPos.Left += velocity.X * deltaTime;
             nextPos.Top += velocity.Y * deltaTime;
 
-            for (uint i = 0; i < collisionMap.getVertexArray().VertexCount; i++)
+            for (uint i = 0; i < Game.tilemap.getVertexArray().VertexCount; i++)
             {
                 if (tileIndex == 0)
                 {
                     tileIndex = 3;
                     FloatRect wallBounds;
-                    Vertex tilemapVertex = collisionMap.getVertexArray()[i];
+                    Vertex tilemapVertex = Game.tilemap.getVertexArray()[i];
                     wallBounds.Left = tilemapVertex.Position.X;
                     wallBounds.Top = tilemapVertex.Position.Y;
                     wallBounds.Width = 8;
@@ -509,7 +509,7 @@ namespace antiplatformer.entityLogic
                 ui.health(health, 0);
                 isDiving = false;
 
-                hurtSound.Play();
+                audioManager.playSound("hurt");
 
                 damageTimer.Restart();
 

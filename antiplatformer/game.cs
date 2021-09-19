@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading;
 using SFML.Audio;
 using SFML.Graphics;
@@ -12,108 +13,38 @@ namespace antiplatformer
 {
     public class Game
     {
-        public static bool debug = false;
+        public static bool GAME_DEBUG = false;
+
         public Game(string[] args)
         {
-            #region command line arguments
-            if (args.Length > 0)
-            {
-                bool wasArg = false;
-                foreach (string arg in args)
-                {
-                    if (arg == "-debug" || arg == "-dev" || arg == "-developer")
-                    {
-                        debug = true;
-                        wasArg = true;
-                    }
-                    if (arg == "-help")
-                    {
-                        utils.Log("---------------------\nAll current arguments are:\n-help | Shows this message\n-stop | Stops the game as soon as it starts\n-debug/-dev/-developer | Gives access to the advanced debugging features\n---------------------");
-                        wasArg = true;
-                    }
-                    if (arg == "-stop")
-                    {
-                        renderWindow = new RenderWindow(new VideoMode(0, 0), "Closing...");
-                        renderWindow.Close();
-                        wasArg = true;
-                    }
-                    if (arg == "-skipSplash")
-                    {
-                        skipSplash = true;
-                        wasArg = true;
-                    }
-                    if (arg == "")
-                    {
-                        wasArg = true;
-                    }
-                }
-
-                if (!wasArg)
-                {
-                    utils.LogWarn("That was not a command line argument! Please try -help to get a list of arguments!");
-                }
-            }
-            #endregion
+            gameManager.handleArgs(args);
         }
 
         //static variables
-        public static string GAME_VERSION = "A-0.2.1";
-        public static Vector2f GAME_INTERNAL_RESOLUTION = new Vector2f(256, 144);
-        public static Clock GAME_GAME_TIME = new Clock();
-        public static Clock GAME_SPEEDRUN_TIMER;
-        public static int GAME_NUMBER_TICKS = 0;
-        public static uint GAME_MAX_FPS = 0;
-        public static uint GAME_MINIMIZED_FPS = 30;
-        public static Vector2f GAME_PLAYER_POSITION;
-        public static Color GAME_BACKGROUND_COLOR = Color.Cyan;
-        public static Font GAME_MAIN_FONT;
         public static string GAME_MAIN_CHARACTER_NAME = "roo";
         public static int GAME_MAIN_CHARACTER_HEALTH = 0;
+        public static Vector2f GAME_PLAYER_POSITION;
+        public static networking GAME_NETWORKING = new networking();
+
         public static scene GAME_SCENE_MANAGER = new scene();
-        public static Sprite GAME_MAIN_SKYBOX;
-        public static float GAME_MAIN_AUDIO_VOLUME = 5f;
-        public static Music GAME_CURRENT_MUSIC;
-        public static int GAME_STATE = 0;
+        public static Font GAME_FONT;
+        public static Sprite GAME_SKYBOX;
         public static int GAME_PLAYER_INDEX = 0;
-        public static bool GAME_CAN_LOAD = true;
-        private Image GAME_WINDOW_ICON = new Image("res/icon.png");
-        public static Gui gui;
 
         private static RenderWindow renderWindow;
-        private VideoMode videomode;
-        public static bool isLoading = true;
+        public static VideoMode videomode;
+        private Image windowIcon = new Image("res/icon.png");
         public static View camera;
         public static View uiCamera;
-        private static Text debugText;
-        public static discordRPC drpc = new discordRPC();
-        private bool hasFocus = true;
+        private Text debugText;
 
-        private sceneEditor se = new sceneEditor();
-
-        private bool skipSplash = false;
         private Clock splashClock = new Clock();
 
         public static List<entity> entityList = new List<entity>();
+        public static List<entity> players = new List<entity>();
         public static List<entity> killedEntities = new List<entity>();
 
-        //for function keys
-        private bool f11Pressed = false;
-        private bool isFullscreen = false;
-        private bool f2Pressed = false;
-        private bool f5Pressed = false;
-        private bool f3Pressed = false;
-        private bool f7Pressed = false;
-        private bool debugOpen = false;
-
         public static TileMap tilemap = new TileMap();
-
-        #region fps stuff
-        private Clock framerate_clock = new Clock();
-        public static Clock deltaClock = new Clock();
-        public static float deltaTime;
-        private float framerate_lastTime = 0;
-        public float fps;
-        #endregion
 
         public bool isRunning() { return renderWindow.IsOpen; }
         public static RenderWindow getRenderWindow() { return renderWindow; }
@@ -123,137 +54,196 @@ namespace antiplatformer
             Directory.CreateDirectory("logs");
             utils.Log("Starting game...");
 
+            settings.loadSettings();
+
             videomode = new VideoMode(1280, 720);
             try
             {
-                renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
-                renderWindow.SetIcon(64, 64, GAME_WINDOW_ICON.Pixels);
-                gui = new Gui(renderWindow);
+                renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + gameManager.GAME_VERSION);
+                renderWindow.SetIcon(64, 64, windowIcon.Pixels);
+                ui.gui = new Gui(renderWindow);
                 utils.Log("Created the main window");
             }
             catch(Exception e)
             {
-                utils.LogFatal("The window failed to open! how...? good luck fixing this one buddy: " + e, false);
+                utils.LogFatal("Failed to open the window. Exception: " + e, false);
             }
 
-            camera = new View(new Vector2f(0f, 0f), GAME_INTERNAL_RESOLUTION);
-            uiCamera = new View(new Vector2f(127, 72), GAME_INTERNAL_RESOLUTION);
+            renderWindow.SetFramerateLimit(settings.max_fps);
+
+            camera = new View(new Vector2f(0f, 0f), gameManager.GAME_INTERNAL_RESOLUTION);
+            uiCamera = new View(new Vector2f(127, 72), gameManager.GAME_INTERNAL_RESOLUTION);
             utils.Log("Created the cameras");
 
-            drpc.Initialize();
+            GAME_NETWORKING.init("ap.rooxchicken.com", 7777, "awesomegame");
+
+            gameManager.drpc.Initialize();
 
             initSplash();
         }
 
         private void initSplash()
         {
-            GAME_STATE = 0;
-            GAME_MAIN_SKYBOX = utils.loadSprite("res/misc/randomsprites/skybox.png");
-            GAME_MAIN_SKYBOX.Position = new Vector2f(-1, 0);
+            gameManager.GAME_STATE = 1;
+            GAME_SKYBOX = utils.loadSprite("res/misc/randomsprites/skybox.png");
+            GAME_SKYBOX.Position = new Vector2f(-1, 0);
 
             entityList.Add(new entity("splashScreen", ""));
         }
 
         private void initTitle()
         {
-            GAME_STATE = 1;
+            gameManager.GAME_STATE = 2;
             entityList.Clear();
             splashClock.Dispose();
+            
+            ui.gui.RemoveAllWidgets();
 
-            #region settings
+            ui.gui.LoadWidgetsFromFile("res/gui/titlescreen.gui");
 
-            if (File.Exists("settings.txt"))
+            foreach(Button item in ui.gui.Widgets.OfType<Button>())
             {
-                string[] settings = File.ReadAllLines("settings.txt");
-                try
+                switch(item.Name)
                 {
-                    foreach (string setting in settings)
+                    case "start":
+                        item.Pressed += (s, e) => initMain(3);
+                        break;
+                    case "settings":
+                        item.Pressed += (s, e) => utils.Log("Not added (i even told you lol)");
+                        break;
+                    case "multiplayer":
+                        //item.Pressed += (s, e) => initMultiplayer();
+                        break;
+                    case "quit":
+                        item.Pressed += (s, e) => renderWindow.Close();
+                        break;
+                    default:
+                        utils.LogWarn("Button not added yet!");
+                        break;
+                }
+            }
+
+            //guess i added the titlescreen lol
+            //initMain();
+        }
+        
+        private void initMultiplayer()
+        {
+            ui.gui.RemoveAllWidgets();
+            ui.gui.LoadWidgetsFromFile("res/gui/multiplayer.gui");
+
+            string ip = "ERROR";
+            int port = 0;
+            string password = "ERROR";
+
+            try
+            {
+                foreach(ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
+                {
+                    foreach(Button item in window.Widgets.OfType<Button>())
                     {
-                        if (setting == "regen=true")
+                        switch(item.Name)
                         {
-                            File.Delete("settings.txt");
-                            var fs = new FileStream("settings.txt", FileMode.Create);
-                            fs.Dispose();
-                            File.WriteAllText("settings.txt", "version=" + GAME_VERSION + "\nvolume=5.0\nmaxfps=0\nunfocusedfps=30");
-                        }
-                        else if (setting.Contains("volume="))
-                        {
-                            GAME_MAIN_AUDIO_VOLUME = float.Parse(setting.Substring(7));
-                        }
-                        else if (setting.Contains("maxfps="))
-                        {
-                            GAME_MAX_FPS = UInt32.Parse(setting.Substring(7));
-                        }
-                        else if (setting.Contains("unfocusedfps="))
-                        {
-                            GAME_MINIMIZED_FPS = UInt32.Parse(setting.Substring(13));
+                            case "connect":
+                                item.Pressed += (s, e) => {
+                                    foreach(TextBox item2 in window.Widgets.OfType<TextBox>())
+                                    {
+                                        switch(item2.Name)
+                                        {
+                                            case "ip":
+                                                ip = item2.Text;
+                                                break;
+                                            case "port":
+                                                try
+                                                {
+                                                    port = Int32.Parse(item2.Text);
+                                                }
+                                                catch (Exception eee)
+                                                {
+                                                    utils.LogError("Failed to start server: The port was not a number ya doofus. Exception: " + eee);
+                                                }
+                                                break;
+                                            default:
+                                                utils.Log("Not added yet!");
+                                                break;
+                                        }
+
+                                        GAME_NETWORKING.init(ip, port, "awesomegame");
+                                    }
+
+                                    ui.gui.RemoveAllWidgets();
+                                    initMain(4);
+                                };
+                                break;
+                            case "cancel":
+                                item.Pressed += (s, e) => initTitle();
+                                break;
+                            default:
+                                utils.LogWarn("Button not added yet!");
+                                break;
                         }
                     }
                 }
-                catch
-                {
-                    utils.LogError("Settings file corrupt or outdated! Ill load what I can, but if you want to fix this error, back up your settings and add regen=true to the top, and I will regenerate the settings file so its not corrupt. See the wiki for more info!");
-                }
             }
-            else
+            catch
             {
-                var fs = new FileStream("settings.txt", FileMode.Create);
-                fs.Dispose();
-                File.WriteAllText("settings.txt", "version=" + GAME_VERSION + "\nvolume=5.0\nmaxfps=165\nunfocusedfps=30");
-                utils.Log("Created a new settings file");
+
             }
-
-            #endregion
-
-            //until i add title screen
-            initMain();
         }
 
-        private void initMain()
+        private void initMain(int state)
         {
-            GAME_STATE = 2;
+            gameManager.GAME_STATE = state;
             ui.load();
 
-            renderWindow.SetFramerateLimit(GAME_MAX_FPS);
-
-            GAME_MAIN_FONT = new Font("res/misc/font.ttf");
+            GAME_FONT = new Font("res/misc/font.ttf");
             utils.Log("Loaded the font");
 
-            debugText = new Text("", GAME_MAIN_FONT);
+            debugText = new Text("", GAME_FONT);
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
 
-            gui.TabKeyUsageEnabled = true;
+            ui.gui.TabKeyUsageEnabled = true;
 
-            GAME_SPEEDRUN_TIMER = new Clock();
             GAME_SCENE_MANAGER.loadScene("res/levels/world1/tutorial.apscene");
+
+            settings.checkForUpdate();
         }
 
         public void update()
         {
             try
             {
-                events();
-                GAME_NUMBER_TICKS++;
-                deltaTime = deltaClock.Restart().AsSeconds();
+                GAME_NETWORKING.update();
+                gameManager.update();
+                gameManager.handleEvents(renderWindow);
 
-                switch (GAME_STATE)
+                audioManager.update();
+
+                switch (gameManager.GAME_STATE)
                 {
                     case 0:
+                        renderWindow.Close();
+                        break;
+                    case 1:
                         splashUpdate();
                         splashRender();
                         break;
-                    case 1:
+                    case 2:
                         titleUpdate();
                         titleRender();
                         break;
-                    case 2:
+                    case 3:
                         mainUpdate();
                         mainRender();
                         break;
+                    case 4:
+                        multiplayerUpdate();
+                        multiplayerRender();
+                        break;
                     case 99:
-                        se.update(deltaTime);
-                        se.render();
+                        gameManager.se.update();
+                        gameManager.se.render();
                         break;
                 }
             }
@@ -265,15 +255,11 @@ namespace antiplatformer
 
         private void splashUpdate()
         {
-            if (splashClock.ElapsedTime.AsMilliseconds() / 7 < 400 && !skipSplash)
+            if (splashClock.ElapsedTime.AsMilliseconds() / 7 < 400)
             {
-                entityList[0].myClass.update(deltaTime);
-                if (Keyboard.IsKeyPressed(Keyboard.Key.Space))
-                    skipSplash = true;
+                entityList[0].myClass.update(gameManager.deltaTime);
             }
             else
-                initTitle();
-            if(skipSplash)
                 initTitle();
         }
 
@@ -281,172 +267,61 @@ namespace antiplatformer
 
         private void tickEntities()
         {
-            if(hasFocus)
+            if(gameManager.GAME_HAS_FOCUS)
             {
-                try
+                foreach (entity e in entityList)
                 {
-                    foreach (entity e in entityList)
+                    e.myClass.update(gameManager.deltaTime);
+                    if (e.myClass.destroy == true)
                     {
-                        e.myClass.update(deltaTime);
-                        if (e.myClass.destroy == true)
-                        {
-                            e.myClass.onKill();
-                            killedEntities.Add(e);
-                        }
+                        e.myClass.onKill();
+                        killedEntities.Add(e);
                     }
-
-                    foreach (entity e in killedEntities)
-                    {
-                        entityList.Remove(e);
-                        GAME_PLAYER_INDEX = entityList.Count - 1;
-                    }
-
-                    killedEntities.Clear();
                 }
-                catch (Exception e)
+
+                foreach (entity e in killedEntities)
                 {
-                    utils.LogError("Failed to tick entities with exception: " + e);
+                    entityList.Remove(e);
+                    GAME_PLAYER_INDEX = entityList.Count - 1;
                 }
             }
         }
 
         private void mainUpdate()
         {
-            if (!isLoading)
+            if (!gameManager.isLoading)
             {
-                GAME_CAN_LOAD = false;
-
                 tickEntities();
 
                 GAME_PLAYER_POSITION = entityList[GAME_PLAYER_INDEX].myClass.position;
                 camera.Center = GAME_PLAYER_POSITION;
 
-                debugText.DisplayedString = "The anti-Platformer V" + GAME_VERSION + " Debug menu\nFPS:" + (int)fps + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds() + "\nSpeedrun Timer: " + GAME_SPEEDRUN_TIMER.ElapsedTime.AsSeconds().ToString();
-
-                GAME_CAN_LOAD = true;
+                debugText.DisplayedString = "The anti-Platformer V" + gameManager.GAME_VERSION + " Debug menu\nFPS:" + (int)gameManager.getFPS() + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds();
             }
         }
 
-        private void events()
+        private void multiplayerUpdate()
         {
-            renderWindow.DispatchEvents();
-            renderWindow.Closed += (sender, e) => { ((Window)sender).Close(); };
-            renderWindow.LostFocus += (sender, e) => { hasFocus = false; ((RenderWindow)sender).SetFramerateLimit(GAME_MINIMIZED_FPS); };
-            renderWindow.GainedFocus += (sender, e) => { hasFocus = true; ((RenderWindow)sender).SetFramerateLimit(GAME_MAX_FPS); };
-
-            #region function keys
-
-            if (Keyboard.IsKeyPressed(Keyboard.Key.F11) && !f11Pressed)
+            if(gameManager.GAME_GAME_TIME.ElapsedTime.AsMilliseconds() % 16 == 0)
             {
-                f11Pressed = true;
-                if(isFullscreen)
-                {
-                    isFullscreen = false;
-                    renderWindow.Close();
-                    renderWindow = new RenderWindow(videomode, "The anti-Platformer V" + GAME_VERSION);
-                    renderWindow.SetFramerateLimit(GAME_MAX_FPS);
-                    gui.Target = renderWindow;
-                    deltaTime = 0;
-                    deltaClock.Restart();
-                }
-                else
-                {
-                    //hasFocus = false;
-                    isFullscreen = true;
-                    renderWindow.Close();
-                    renderWindow = new RenderWindow(VideoMode.DesktopMode, "...this is a fullscreen window how are you seeing this", Styles.Fullscreen);
-                    renderWindow.SetFramerateLimit(GAME_MAX_FPS);
-                    gui.Target = renderWindow;
-                    deltaTime = 0;
-                    deltaClock.Restart();
-                }
-            }
-            if (!Keyboard.IsKeyPressed(Keyboard.Key.F11) && f11Pressed)
-            {
-                f11Pressed = false;
+                
             }
 
-            if (Keyboard.IsKeyPressed(Keyboard.Key.F2) && !f2Pressed)
+            if (!gameManager.isLoading)
             {
-                f2Pressed = true;
-                Image screenshot = renderWindow.Capture();
-                try
-                {
-                    Directory.CreateDirectory("screenshots");
-                    string path = "screenshots/" + DateTime.Now.ToFileTime() + DateTime.Now.Millisecond + ".png";
-                    screenshot.SaveToFile(path);
-                    utils.Log("Saved a screenshot to: " + path);
-                }
-                catch
-                {
-                    utils.LogError("Failed to save a screenshot!");
-                }
+                tickEntities();
 
-                deltaTime = 0;
-                deltaClock.Restart();
-            }
-            if (!Keyboard.IsKeyPressed(Keyboard.Key.F2) && f2Pressed)
-            {
-                f2Pressed = false;
-            }
+                GAME_PLAYER_POSITION = entityList[GAME_PLAYER_INDEX].myClass.position;
+                camera.Center = GAME_PLAYER_POSITION;
 
-            if (Keyboard.IsKeyPressed(Keyboard.Key.F5) && !f5Pressed)
-            {
-                f5Pressed = true;
-                GAME_SCENE_MANAGER.reloadScene();
+                debugText.DisplayedString = "The anti-Platformer V" + gameManager.GAME_VERSION + " Debug menu\nFPS:" + (int)gameManager.getFPS() + "\nX:" + GAME_PLAYER_POSITION.X.ToString() + "\nY:" + GAME_PLAYER_POSITION.Y.ToString() + "\nAir time: " + entityList[GAME_PLAYER_INDEX].myClass.coyoteJump.ElapsedTime.AsMilliseconds();
             }
-            if (!Keyboard.IsKeyPressed(Keyboard.Key.F5) && f5Pressed)
-            {
-                f5Pressed = false;
-            }
-
-            if (Keyboard.IsKeyPressed(Keyboard.Key.F3) && !f3Pressed)
-            {
-                f3Pressed = true;
-                debugOpen = !debugOpen;
-            }
-            if (!Keyboard.IsKeyPressed(Keyboard.Key.F3) && f3Pressed)
-            {
-                f3Pressed = false;
-            }
-
-            if (Keyboard.IsKeyPressed(Keyboard.Key.F7) && !f7Pressed)
-            {
-                f7Pressed = true;
-                if(GAME_STATE == 99)
-                {
-                    se.exit();
-                    GAME_STATE = 2;
-                }
-                else
-                {
-                    se.init();
-                    GAME_STATE = 99;
-                }
-            }
-            if (!Keyboard.IsKeyPressed(Keyboard.Key.F7) && f7Pressed)
-            {
-                f7Pressed = false;
-            }
-
-            #endregion
-
-            #region fps
-
-            float currentTime = framerate_clock.Restart().AsSeconds();
-            if (GAME_GAME_TIME.ElapsedTime.AsMilliseconds() % 125 == 0)
-            {
-                fps = 1 / currentTime;
-            }
-            framerate_lastTime = currentTime;
-
-            #endregion
         }
 
         private void splashRender()
         {
-            renderWindow.Clear(GAME_BACKGROUND_COLOR);
-            renderWindow.Draw(GAME_MAIN_SKYBOX);
+            renderWindow.Clear();
+            renderWindow.Draw(GAME_SKYBOX);
 
             renderWindow.SetView(uiCamera);
 
@@ -462,31 +337,63 @@ namespace antiplatformer
             renderWindow.Display();
         }
 
-        private void titleRender() { }
+        private void titleRender() 
+        {
+            renderWindow.Clear();
+            renderWindow.SetView(uiCamera);
+
+            renderWindow.Draw(GAME_SKYBOX);
+
+            renderUI();
+
+            renderWindow.Display();
+        }
 
         private void mainRender()
         {
-            renderWindow.Clear(GAME_BACKGROUND_COLOR);
+            renderWindow.Clear();
             renderWindow.SetView(uiCamera);
 
-            renderWindow.Draw(GAME_MAIN_SKYBOX);
+            renderWindow.Draw(GAME_SKYBOX);
 
             //draw game world
             renderWindow.SetView(camera);
 
             renderWindow.Draw(tilemap);
 
-            //foreach (Sprite sprite in tileMap.tilemap)
-            //{
-            //    if (GAME_PLAYER_POSITION.X - sprite.Position.X < GAME_INTERNAL_RESOLUTION.X && GAME_PLAYER_POSITION.Y - sprite.Position.Y < GAME_INTERNAL_RESOLUTION.Y && GAME_PLAYER_POSITION.X + GAME_INTERNAL_RESOLUTION.X - sprite.Position.X > 0 && GAME_PLAYER_POSITION.Y + GAME_INTERNAL_RESOLUTION.Y - sprite.Position.Y > 0)
-            //    {
-            //        renderWindow.Draw(sprite);
-            //    }
-            //}
-
-            if(!isLoading)
+            if(!gameManager.isLoading)
             {
                 foreach (entity e in entityList)
+                {
+                    renderWindow.Draw(e.myClass.getSprite());
+                }
+            }
+
+            renderUI();
+
+            renderWindow.Display();
+        }
+
+        private void multiplayerRender()
+        {
+            renderWindow.Clear();
+            renderWindow.SetView(uiCamera);
+
+            renderWindow.Draw(GAME_SKYBOX);
+
+            //draw game world
+            renderWindow.SetView(camera);
+
+            renderWindow.Draw(tilemap);
+
+            if(!gameManager.isLoading)
+            {
+                foreach (entity e in entityList)
+                {
+                    renderWindow.Draw(e.myClass.getSprite());
+                }
+
+                foreach (entity e in players)
                 {
                     renderWindow.Draw(e.myClass.getSprite());
                 }
@@ -502,13 +409,13 @@ namespace antiplatformer
             //draw ui
             renderWindow.SetView(uiCamera);
 
-            if(debugOpen)
+            if(gameManager.debugOpen)
             {
                 renderWindow.Draw(debugText);
             }
             else
             {
-                gui.Draw();
+                ui.gui.Draw();
                 foreach (Sprite element in ui.sprites)
                 {
                     renderWindow.Draw(element);
@@ -519,34 +426,34 @@ namespace antiplatformer
         public static void cameraShake(int degrees, bool right)
         {
             Thread shake = new Thread(() => {
-                if (right)
+            if (right)
+            {
+                for (int i = 0; i < degrees; i++)
                 {
-                    for (int i = 0; i < degrees; i++)
-                    {
-                        camera.Rotation = i;
-                        Thread.Sleep(5);
-                    }
-                    for (int i = degrees; i > 0; i--)
-                    {
-                        camera.Rotation = i;
-                        Thread.Sleep(5);
-                    }
+                    camera.Rotation = i;
+                    Thread.Sleep(5);
                 }
-                else
+                for (int i = degrees; i > 0; i--)
                 {
-                    for (int i = 0; i < degrees; i++)
-                    {
-                        camera.Rotation = -i;
-                        Thread.Sleep(5);
-                    }
-                    for (int i = degrees; i > 0; i--)
-                    {
-                        camera.Rotation = -i;
-                        Thread.Sleep(5);
-                    }
+                    camera.Rotation = i;
+                    Thread.Sleep(5);
                 }
-                camera.Rotation = 0; 
-                return; });
+            }
+            else
+            {
+                for (int i = 0; i < degrees; i++)
+                {
+                    camera.Rotation = -i;
+                    Thread.Sleep(5);
+                }
+                for (int i = degrees; i > 0; i--)
+                {
+                    camera.Rotation = -i;
+                    Thread.Sleep(5);
+                }
+            }
+            camera.Rotation = 0; 
+            return; });
 
             shake.Start();
         }
@@ -555,21 +462,23 @@ namespace antiplatformer
         {
             try
             {
+                //networking.shutdown();
+                GAME_NETWORKING.shutdown();
                 camera.Dispose();
                 uiCamera.Dispose();
                 utils.Log("Unloaded the cameras");
-                ui.unload();
-                utils.Log("Unloaded the UI");
                 entityList.Clear();
                 utils.Log("Unloaded the entities");
                 debugText.Dispose();
-                deltaClock.Dispose();
-                framerate_clock.Dispose();
+                gameManager.deltaClock.Dispose();
+                gameManager.framerate_clock.Dispose();
                 utils.Log("Unloaded the framerate clocks");
-                drpc.Deinitialize();
+                gameManager.drpc.Deinitialize();
                 utils.Log("Unloaded DiscordRPC");
                 renderWindow.Dispose();
                 utils.Log("Unloaded the window");
+                ui.unload();
+                utils.Log("Unloaded the UI");
             }
             catch (Exception e)
             {

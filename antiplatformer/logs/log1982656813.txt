@@ -1,0 +1,4 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+15028[ERROR] splash screen broke lol i dont care

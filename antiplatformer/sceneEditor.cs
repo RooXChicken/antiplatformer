@@ -15,7 +15,7 @@ namespace antiplatformer
         public Sprite skybox;
         private static Text debugText;
         public string levelPath = "ERROR";
-        View cameraPosition = new View(new Vector2f(0f, 0f), Game.GAME_INTERNAL_RESOLUTION);
+        View cameraPosition = new View(new Vector2f(0f, 0f), gameManager.GAME_INTERNAL_RESOLUTION);
 
         float movementSpeed = 200;
 
@@ -38,40 +38,15 @@ namespace antiplatformer
 
         public void init()
         {
-            try
-            {
-                Game.GAME_CURRENT_MUSIC.Stop();
-                Game.GAME_CURRENT_MUSIC.Dispose();
-                Game.GAME_CURRENT_MUSIC = null;
-            }
-            catch
-            {
-                utils.LogWarn("Tried to stop music when it's not playing. This is normal, you can ignore this");
-            }
+            audioManager.stopMusic("generic");
 
-            debugText = new Text("", Game.GAME_MAIN_FONT);
+            debugText = new Text("", Game.GAME_FONT);
             debugText.Scale = new Vector2f(0.15f, 0.15f);
             debugText.Position = new Vector2f(0, 1);
 
-            Game.gui.LoadWidgetsFromFile("res/gui/sceneeditor.gui");
+            ui.gui.LoadWidgetsFromFile("res/gui/sceneeditor.gui");
 
-            //foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
-            //{
-            //    foreach (Button item in window.Widgets.OfType<Button>())
-            //    {
-            //        item.Pressed += (sender, es) => {
-            //            foreach (ChildWindow windoww in Game.gui.Widgets.OfType<ChildWindow>())
-            //            {
-            //                if (windoww.Name == "createEntity")
-            //                {
-            //                    windoww.Visible = true;
-            //                }
-            //            }
-            //        };
-            //    }
-            //}
-
-            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
             {
                 foreach (TextBox item in window.Widgets.OfType<TextBox>())
                 {
@@ -94,18 +69,18 @@ namespace antiplatformer
                 }
             }
 
-            Game.drpc.Update("Scene editor", "Working on a scene...");
+            gameManager.drpc.Update("Scene editor", "Working on a scene...");
         }
 
-        public void update(float deltaTime)
+        public void update()
         {
             mousePosition = Game.getRenderWindow().MapPixelToCoords(new Vector2i(Mouse.GetPosition(Game.getRenderWindow()).X, Mouse.GetPosition(Game.getRenderWindow()).Y));
-            mousePosition.X = mousePosition.X + position.X - (Game.GAME_INTERNAL_RESOLUTION.X / 2) + 1;
-            mousePosition.Y = mousePosition.Y + position.Y - (Game.GAME_INTERNAL_RESOLUTION.Y / 2);
+            mousePosition.X = mousePosition.X + position.X - (gameManager.GAME_INTERNAL_RESOLUTION.X / 2) + 1;
+            mousePosition.Y = mousePosition.Y + position.Y - (gameManager.GAME_INTERNAL_RESOLUTION.Y / 2);
 
             bool hasFocus = false;
 
-            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
             {
                 foreach (TextBox item in window.Widgets.OfType<TextBox>())
                 {
@@ -120,19 +95,19 @@ namespace antiplatformer
             {
                 if (Keyboard.IsKeyPressed(Keyboard.Key.Left) || Keyboard.IsKeyPressed(Keyboard.Key.A))
                 {
-                    position.X -= movementSpeed * deltaTime;
+                    position.X -= movementSpeed * gameManager.deltaTime;
                 }
                 if (Keyboard.IsKeyPressed(Keyboard.Key.Right) || Keyboard.IsKeyPressed(Keyboard.Key.D))
                 {
-                    position.X += movementSpeed * deltaTime;
+                    position.X += movementSpeed * gameManager.deltaTime;
                 }
                 if (Keyboard.IsKeyPressed(Keyboard.Key.Up) || Keyboard.IsKeyPressed(Keyboard.Key.W))
                 {
-                    position.Y -= movementSpeed * deltaTime;
+                    position.Y -= movementSpeed * gameManager.deltaTime;
                 }
                 if (Keyboard.IsKeyPressed(Keyboard.Key.Down) || Keyboard.IsKeyPressed(Keyboard.Key.S))
                 {
-                    position.Y += movementSpeed * deltaTime;
+                    position.Y += movementSpeed * gameManager.deltaTime;
                 }
 
                 if (Keyboard.IsKeyPressed(Keyboard.Key.LControl))
@@ -160,7 +135,7 @@ namespace antiplatformer
                 {
                     if (e.myClass.name == entityGrabbedName && selectedEntityID == index)
                     {
-                        foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                        foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
                         {
                             foreach (TextBox item in window.Widgets.OfType<TextBox>())
                             {
@@ -168,7 +143,7 @@ namespace antiplatformer
                                 {
                                     if (grabbedEntityInput != item.Text.Split('\n'))
                                     {
-                                        item.Text.Split('\n');
+                                        //item.Text.Split('\n');
                                         e.myClass.input = item.Text.Split('\n');
                                         e.myClass.parseInput();
                                     }
@@ -182,7 +157,7 @@ namespace antiplatformer
                             {
                                 e.myClass.position = mousePosition;
                                 e.myClass.sprite.Position = mousePosition;
-                                foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                                foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
                                 {
                                     foreach (TextBox item in window.Widgets.OfType<TextBox>())
                                     {
@@ -220,7 +195,7 @@ namespace antiplatformer
                         e.myClass.position = mousePosition;
                         e.myClass.sprite.Position = mousePosition;
                         selectedEntityID = index;
-                        foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                        foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
                         {
                             foreach (TextBox item in window.Widgets.OfType<TextBox>())
                             {
@@ -259,10 +234,10 @@ namespace antiplatformer
 
             save("test.apscene");
 
-            Game.gui.RemoveAllWidgets();
+            ui.gui.RemoveAllWidgets();
 
-            Game.deltaTime = 0;
-            Game.deltaClock.Restart();
+            gameManager.deltaTime = 0;
+            gameManager.deltaClock.Restart();
         }
 
         public void save(string sceneName)
@@ -270,7 +245,7 @@ namespace antiplatformer
             string finalInput = "";
             try
             {
-                foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+                foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
                 {
                     foreach (TextBox item in window.Widgets.OfType<TextBox>())
                     {
@@ -339,7 +314,7 @@ namespace antiplatformer
                 utils.LogError("Failed to write level to the scene! Exception: " + e);
             }
 
-            foreach (ChildWindow window in Game.gui.Widgets.OfType<ChildWindow>())
+            foreach (ChildWindow window in ui.gui.Widgets.OfType<ChildWindow>())
             {
                 foreach (TextBox item in window.Widgets.OfType<TextBox>())
                 {
@@ -365,7 +340,7 @@ namespace antiplatformer
             Game.getRenderWindow().Clear(Color.Black);
 
             Game.getRenderWindow().SetView(Game.uiCamera);
-            Game.getRenderWindow().Draw(Game.GAME_MAIN_SKYBOX);
+            Game.getRenderWindow().Draw(Game.GAME_SKYBOX);
 
             //draw game world
             Game.getRenderWindow().SetView(cameraPosition);
@@ -379,7 +354,7 @@ namespace antiplatformer
 
             Game.getRenderWindow().SetView(Game.uiCamera);
             Game.getRenderWindow().Draw(debugText);
-            Game.gui.Draw();
+            ui.gui.Draw();
 
             Game.getRenderWindow().Display();
         }

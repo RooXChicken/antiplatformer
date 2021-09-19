@@ -1,101 +1,27 @@
 Renderer.1 {
-    backgroundcolor = #F5F5F5;
-    backgroundcolordisabled = #E6E6E6;
-    backgroundcolordown = #EBEBEB;
-    backgroundcolorhover = white;
-    bordercolor = #3C3C3C;
-    bordercolordisabled = #7D7D7D;
-    bordercolordown = black;
-    bordercolorfocused = #1E1EB4;
-    bordercolorhover = black;
+    backgroundcolor = white;
+    bordercolor = black;
     borders = (1, 1, 1, 1);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (0, 0, 0, 0);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
     textcolor = #3C3C3C;
-    textcolordisabled = #7D7D7D;
-    textcolordown = black;
-    textcolorhover = black;
-    texture = None;
+    texturebackground = None;
+}
+
+Renderer.2 {
+    texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
     texturedisabled = None;
     texturedown = None;
     texturefocused = None;
     texturehover = None;
 }
 
-Renderer.2 {
-    backgroundcolor = white;
-    bordercolor = black;
-    borders = (1, 1, 1, 1);
-    caretcolor = black;
-    caretwidth = 1;
-    defaulttextcolor = #A0A0A0;
-    padding = (0, 0, 0, 0);
-    selectedtextbackgroundcolor = #006EFF;
-    selectedtextcolor = white;
-    textcolor = #3C3C3C;
-    texturebackground = None;
-}
-
 Renderer.3 {
-    backgroundcolor = #E6E6E6;
-    borderbelowtitlebar = 1;
-    bordercolor = black;
-    borders = (1, 1, 1, 1);
-    distancetoside = 3;
-    paddingbetweenbuttons = 1;
-    showtextontitlebuttons = true;
-    texturebackground = None;
-    texturetitlebar = None;
-    titlebarcolor = white;
-    titlecolor = #3C3C3C;
-
-    closebutton {
-        backgroundcolor = #F5F5F5;
-        backgroundcolordown = #EBEBEB;
-        backgroundcolorhover = white;
-        bordercolor = #3C3C3C;
-        bordercolordown = black;
-        bordercolorhover = black;
-        borders = (1, 1, 1, 1);
-        textcolor = #3C3C3C;
-        textcolordown = black;
-        textcolorhover = black;
-        texture = None;
-        texturedisabled = None;
-        texturedown = None;
-        texturefocused = None;
-        texturehover = None;
-    }
-
-    minimizebutton {
-        backgroundcolor = #F5F5F5;
-        backgroundcolordown = #EBEBEB;
-        backgroundcolorhover = white;
-        bordercolor = #3C3C3C;
-        bordercolordown = black;
-        bordercolorhover = black;
-        borders = (1, 1, 1, 1);
-        textcolor = #3C3C3C;
-        textcolordown = black;
-        textcolorhover = black;
-        texture = None;
-        texturedisabled = None;
-        texturedown = None;
-        texturefocused = None;
-        texturehover = None;
-    }
-}
-
-Renderer.4 {
-    backgroundcolor = white;
-    bordercolor = black;
-    borders = (1, 1, 1, 1);
-    caretcolor = black;
-    caretwidth = 1;
-    defaulttextcolor = #A0A0A0;
-    padding = (0, 0, 0, 0);
-    selectedtextbackgroundcolor = #006EFF;
-    selectedtextcolor = white;
-    textcolor = #3C3C3C;
-    texturebackground = None;
+    texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
 
     scrollbar {
         arrowbackgroundcolor = #F5F5F5;
@@ -123,7 +49,54 @@ ChildWindow.sceneEditorWindow {
     Title = "Scene editor";
     TitleAlignment = Center;
     TitleButtons = Minimize | Close;
-    renderer = &3;
+
+    Renderer {
+        backgroundcolor = rgb( 113, 105, 117);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = rgb( 65, 63, 67);
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+
+        minimizebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
 
     TextBox.path {
         DefaultText = "Level Path";
@@ -134,38 +107,7 @@ ChildWindow.sceneEditorWindow {
         Text = "";
         TextSize = 16;
         UserData = "";
-
-        Renderer {
-            backgroundcolor = white;
-            bordercolor = black;
-            borders = (1, 1, 1, 1);
-            caretcolor = black;
-            caretwidth = 1;
-            defaulttextcolor = #A0A0A0;
-            padding = (0, 0, 0, 0);
-            selectedtextbackgroundcolor = #006EFF;
-            selectedtextcolor = white;
-            textcolor = #3C3C3C;
-            texturebackground = None;
-
-            scrollbar {
-                arrowbackgroundcolor = #F5F5F5;
-                arrowbackgroundcolorhover = white;
-                arrowcolor = #3C3C3C;
-                arrowcolorhover = black;
-                texturearrowdown = None;
-                texturearrowdownhover = None;
-                texturearrowup = None;
-                texturearrowuphover = None;
-                texturethumb = None;
-                texturethumbhover = None;
-                texturetrack = None;
-                texturetrackhover = None;
-                thumbcolor = #DCDCDC;
-                thumbcolorhover = #E6E6E6;
-                trackcolor = #F5F5F5;
-            }
-        }
+        renderer = &3;
     }
 
     TextBox.name {
@@ -176,7 +118,7 @@ ChildWindow.sceneEditorWindow {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &4;
+        renderer = &3;
     }
 
     TextBox.skybox {
@@ -187,7 +129,7 @@ ChildWindow.sceneEditorWindow {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &4;
+        renderer = &3;
     }
 
     TextBox.music {
@@ -198,7 +140,7 @@ ChildWindow.sceneEditorWindow {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &4;
+        renderer = &3;
     }
 
     TextBox.entity {
@@ -209,16 +151,15 @@ ChildWindow.sceneEditorWindow {
         Size = (408, 163.131);
         Text = "";
         TextSize = 16;
-        renderer = &4;
+        renderer = &3;
     }
 
     Button.spawn {
-        Enabled = false;
-        Position = (150, 330);
-        Size = (111, 22);
+        Position = (10, 330);
+        Size = (121, 22);
         Text = "Spawn Entity";
         TextSize = 13;
-        renderer = &1;
+        renderer = &2;
     }
 
     TextBox.save {
@@ -229,50 +170,83 @@ ChildWindow.sceneEditorWindow {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
+        renderer = &3;
+    }
 
-        Renderer {
-            backgroundcolor = white;
-            bordercolor = black;
-            borders = (1, 1, 1, 1);
-            caretcolor = black;
-            caretwidth = 1;
-            defaulttextcolor = #A0A0A0;
-            padding = (0, 0, 0, 0);
-            selectedtextbackgroundcolor = #006EFF;
-            selectedtextcolor = white;
-            textcolor = #3C3C3C;
-            texturebackground = None;
+    Button.kill {
+        Position = (295, 330);
+        Size = (121, 22);
+        Text = "Kill Entity";
+        TextSize = 13;
+        renderer = &2;
+    }
 
-            scrollbar {
-                arrowbackgroundcolor = #F5F5F5;
-                arrowbackgroundcolorhover = white;
-                arrowcolor = #3C3C3C;
-                arrowcolorhover = black;
-                texturearrowdown = None;
-                texturearrowdownhover = None;
-                texturearrowup = None;
-                texturearrowuphover = None;
-                texturethumb = None;
-                texturethumbhover = None;
-                texturetrack = None;
-                texturetrackhover = None;
-                thumbcolor = #DCDCDC;
-                thumbcolorhover = #E6E6E6;
-                trackcolor = #F5F5F5;
-            }
-        }
+    Button.update {
+        Position = (150, 330);
+        Size = (131, 22);
+        Text = "Update Level";
+        TextSize = 13;
+        renderer = &2;
     }
 }
 
 ChildWindow.createEntity {
-    Enabled = false;
-    Position = (410, 210);
+    Position = (440, 210);
     Size = (400, 300);
     Title = "Create entity";
     TitleAlignment = Center;
     TitleButtons = Close;
     Visible = false;
-    renderer = &3;
+
+    Renderer {
+        backgroundcolor = #E6E6E6;
+        borderbelowtitlebar = 1;
+        bordercolor = black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 3;
+        paddingbetweenbuttons = 1;
+        showtextontitlebuttons = true;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = white;
+        titlecolor = #3C3C3C;
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+
+        minimizebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
 
     TextBox.eName {
         DefaultText = "Entity Name";
@@ -282,7 +256,7 @@ ChildWindow.createEntity {
         Size = (378, 35);
         Text = "";
         TextSize = 13;
-        renderer = &2;
+        renderer = &1;
     }
 
     TextBox.ePos {
@@ -293,7 +267,7 @@ ChildWindow.createEntity {
         Size = (378, 35);
         Text = "";
         TextSize = 13;
-        renderer = &2;
+        renderer = &1;
     }
 
     TextBox.eParam {
@@ -304,15 +278,36 @@ ChildWindow.createEntity {
         Size = (378, 155);
         Text = "";
         TextSize = 13;
-        renderer = &2;
+        renderer = &1;
     }
 
-    Button.Button1 {
+    Button.eSpawn {
         Position = (10, 270);
         Size = (381, 22);
         Text = "Spawn Entity";
         TextSize = 13;
-        renderer = &1;
+
+        Renderer {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordisabled = #E6E6E6;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordisabled = #7D7D7D;
+            bordercolordown = black;
+            bordercolorfocused = #1E1EB4;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordisabled = #7D7D7D;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
     }
 }
 

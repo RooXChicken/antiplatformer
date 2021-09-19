@@ -1,0 +1,759 @@
+0[INFO] Starting game...
+0[FATAL] The window failed to open! how...? good luck fixing this one buddy: System.DllNotFoundException: Unable to load shared library 'ctgui-0.8.dll' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: libctgui-0.8.dll: cannot open shared object file: No such file or directory
+   at TGUI.Gui.tguiGui_create()
+   at TGUI.Gui..ctor()
+   at TGUI.Gui..ctor(RenderWindow window)
+   at antiplatformer.Game.init() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 131 | Can't recover!
+0[INFO] Created the cameras
+13226[INFO] Loaded the font
+13226[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.initMain() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 226
+   at antiplatformer.Game.initTitle() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 209
+   at antiplatformer.Game.splashUpdate() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 275
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 243
+21641[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21642[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21643[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21644[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21645[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21646[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21647[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21648[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21649[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21650[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21651[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21652[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21653[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21654[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21655[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21656[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21657[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21658[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21659[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21660[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21661[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21662[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21663[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21664[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21665[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21666[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21667[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21668[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21669[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21670[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21671[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21672[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21673[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21674[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21675[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21676[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21677[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21678[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21679[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21680[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21681[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21682[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21683[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21684[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21685[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21686[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21687[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21688[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21689[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21690[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21691[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21692[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21693[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21694[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21695[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21696[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21697[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21698[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21699[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21700[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21701[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21702[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21703[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21704[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21705[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21706[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21707[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21708[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21709[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21710[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21711[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21712[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21713[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21714[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21715[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21716[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21717[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21718[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21719[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21720[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21721[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21722[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21723[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21724[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21725[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21726[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21727[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21728[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21729[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21730[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21731[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21732[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21733[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21734[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21735[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21736[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21737[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21738[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21739[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21740[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21741[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21742[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21743[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21744[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21745[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21746[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21747[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21748[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21749[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21750[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21751[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21752[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21753[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21754[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21755[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21756[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21757[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21758[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21759[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21760[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21761[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21762[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21763[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21764[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21765[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21766[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21767[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21768[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21769[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21770[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21771[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21772[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21773[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21774[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21775[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21776[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21777[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21778[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21779[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21780[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21781[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21782[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21783[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21784[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21785[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21786[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21787[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21788[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21789[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21790[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21791[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21792[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21793[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21794[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21795[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21796[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21797[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21798[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21799[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21800[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21801[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21802[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21803[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21804[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21805[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21806[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21807[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21808[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21809[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21810[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21811[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21812[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21813[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21814[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21815[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21816[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21817[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21818[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21819[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21820[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21821[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21822[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21823[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21824[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21825[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.Game.renderUI() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 512
+   at antiplatformer.Game.mainRender() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 496
+   at antiplatformer.Game.update() in /home/rooxchicken/Projects/CS/antiplatformer/antiplatformer/game.cs:line 252
+21825[INFO] Unloaded the cameras
+21825[INFO] Unloaded the UI
+21825[INFO] Unloaded the entities
+21825[INFO] Unloaded the framerate clocks
+21825[INFO] Unloaded DiscordRPC
+21825[INFO] Unloaded the window

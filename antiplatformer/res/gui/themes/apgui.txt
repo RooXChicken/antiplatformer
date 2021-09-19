@@ -1,0 +1,22 @@
+Button {
+    Texture = "apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+}
+
+CheckBox {
+	TextureUnchecked = "apgui.png" Part(31, 0, 16, 14);
+	TextureChecked = "apgui.png" Part(47, 0, 16, 14);
+}
+
+ChildWindow {
+    TitleBarColor             = rgb( 65,  63,  67);
+    BackgroundColor        = rgb( 113,  105,  117);
+    BorderColor            = Black;
+    Borders                = (1, 1, 1, 1);
+    DistanceToSide         = 5;
+    PaddingBetweenButtons  = 2;
+    ShowTextOnTitleButtons = false;
+}
+
+Textbox {
+    TextureBackground = "apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
+}

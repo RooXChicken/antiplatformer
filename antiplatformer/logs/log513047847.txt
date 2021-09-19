@@ -1,0 +1,170 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+0[INFO] Connected to the server!
+14888[INFO] Loaded the font
+14888[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+14888[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+14888[INFO] Updated discord rich presence
+14888[INFO] Loaded entity with data: checkpoint | 300>150
+14888[INFO] Loaded entity with data: checkpoint | 480>150
+14888[INFO] Loaded entity with data: checkpoint | 800>150
+14888[INFO] Loaded entity with data: checkpoint | 1125>150
+14888[INFO] Loaded entity with data: checkpoint | 1350>140
+14888[INFO] Loaded entity with data: checkpoint | 1710>120
+14888[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+14888[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+14888[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+14888[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+14888[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+14888[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+14888[INFO] Loaded entity with data: player | 135>150>350
+14888[INFO] Created a new settings file
+14888[INFO] 
+14888[INFO] Conn
+19578[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+19578[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+19578[INFO] Updated discord rich presence
+19578[ERROR] Failed to load a sound with path: res/sfx/music/world1/tutorial.wav. Exception: System.ArgumentException: An item with the same key has already been added. Key: generic
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSong(String song, String name, Boolean looping) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 33
+19578[INFO] Loaded entity with data: checkpoint | 300>150
+19578[INFO] Loaded entity with data: checkpoint | 480>150
+19578[INFO] Loaded entity with data: checkpoint | 800>150
+19578[INFO] Loaded entity with data: checkpoint | 1125>150
+19578[INFO] Loaded entity with data: checkpoint | 1350>140
+19578[INFO] Loaded entity with data: checkpoint | 1710>120
+19578[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+19578[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+19578[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+19578[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+19578[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+19578[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+19578[ERROR] Failed to load a sound with path: res/sfx/jump1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19578[ERROR] Failed to load a sound with path: res/sfx/hurt1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: hurt
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19578[INFO] Loaded entity with data: player | 135>150>350
+19806[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+19806[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+19806[INFO] Updated discord rich presence
+19806[ERROR] Failed to load a sound with path: res/sfx/music/world1/tutorial.wav. Exception: System.ArgumentException: An item with the same key has already been added. Key: generic
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSong(String song, String name, Boolean looping) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 33
+19806[INFO] Loaded entity with data: checkpoint | 300>150
+19806[INFO] Loaded entity with data: checkpoint | 480>150
+19806[INFO] Loaded entity with data: checkpoint | 800>150
+19806[INFO] Loaded entity with data: checkpoint | 1125>150
+19806[INFO] Loaded entity with data: checkpoint | 1350>140
+19806[INFO] Loaded entity with data: checkpoint | 1710>120
+19806[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+19806[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+19806[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+19806[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+19806[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+19806[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+19806[ERROR] Failed to load a sound with path: res/sfx/jump1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19806[ERROR] Failed to load a sound with path: res/sfx/hurt1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: hurt
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19806[INFO] Loaded entity with data: player | 135>150>350
+19888[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+19888[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+19888[INFO] Updated discord rich presence
+19888[ERROR] Failed to load a sound with path: res/sfx/music/world1/tutorial.wav. Exception: System.ArgumentException: An item with the same key has already been added. Key: generic
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSong(String song, String name, Boolean looping) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 33
+19888[INFO] Loaded entity with data: checkpoint | 300>150
+19888[INFO] Loaded entity with data: checkpoint | 480>150
+19888[INFO] Loaded entity with data: checkpoint | 800>150
+19888[INFO] Loaded entity with data: checkpoint | 1125>150
+19888[INFO] Loaded entity with data: checkpoint | 1350>140
+19888[INFO] Loaded entity with data: checkpoint | 1710>120
+19888[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+19888[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+19888[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+19888[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+19888[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+19888[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+19888[ERROR] Failed to load a sound with path: res/sfx/jump1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19888[ERROR] Failed to load a sound with path: res/sfx/hurt1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: hurt
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19888[INFO] Loaded entity with data: player | 135>150>350
+19938[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+19938[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+19938[INFO] Updated discord rich presence
+19938[ERROR] Failed to load a sound with path: res/sfx/music/world1/tutorial.wav. Exception: System.ArgumentException: An item with the same key has already been added. Key: generic
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSong(String song, String name, Boolean looping) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 33
+19938[INFO] Loaded entity with data: checkpoint | 300>150
+19938[INFO] Loaded entity with data: checkpoint | 480>150
+19938[INFO] Loaded entity with data: checkpoint | 800>150
+19938[INFO] Loaded entity with data: checkpoint | 1125>150
+19938[INFO] Loaded entity with data: checkpoint | 1350>140
+19938[INFO] Loaded entity with data: checkpoint | 1710>120
+19938[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+19938[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+19938[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+19938[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+19938[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+19938[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+19938[ERROR] Failed to load a sound with path: res/sfx/jump1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19938[ERROR] Failed to load a sound with path: res/sfx/hurt1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: hurt
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19938[INFO] Loaded entity with data: player | 135>150>350
+19982[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+19982[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+19982[INFO] Updated discord rich presence
+19982[ERROR] Failed to load a sound with path: res/sfx/music/world1/tutorial.wav. Exception: System.ArgumentException: An item with the same key has already been added. Key: generic
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSong(String song, String name, Boolean looping) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 33
+19982[INFO] Loaded entity with data: checkpoint | 300>150
+19982[INFO] Loaded entity with data: checkpoint | 480>150
+19982[INFO] Loaded entity with data: checkpoint | 800>150
+19982[INFO] Loaded entity with data: checkpoint | 1125>150
+19982[INFO] Loaded entity with data: checkpoint | 1350>140
+19982[INFO] Loaded entity with data: checkpoint | 1710>120
+19982[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+19982[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+19982[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+19982[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+19982[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+19982[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+19982[ERROR] Failed to load a sound with path: res/sfx/jump1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: jump
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19982[ERROR] Failed to load a sound with path: res/sfx/hurt1.ogg. Exception: System.ArgumentException: An item with the same key has already been added. Key: hurt
+   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at antiplatformer.audioManager.loadSound(String sound, String name) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/audioManager.cs:line 21
+19982[INFO] Loaded entity with data: player | 135>150>350
+20164[INFO] Unloaded the cameras
+20164[INFO] Unloaded the UI
+20164[INFO] Unloaded the entities
+20164[INFO] Unloaded the framerate clocks
+20164[INFO] Unloaded DiscordRPC
+20164[INFO] Unloaded the window

@@ -1,0 +1,3 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras

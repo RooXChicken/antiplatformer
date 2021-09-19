@@ -1,0 +1,94 @@
+Renderer.1 {
+    texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
+}
+
+ChildWindow.update {
+    Position = (440, 160);
+    PositionLocked = true;
+    Size = (400, 300);
+    Title = "Update Notice!";
+    TitleAlignment = Center;
+    TitleButtons = Close;
+
+    Renderer {
+        backgroundcolor = rgb( 113, 105, 117);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = rgb( 65, 63, 67);
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+
+    TextBox.details {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (50, 70);
+        ReadOnly = true;
+        Size = (298, 175);
+        Text = "This message should not appear. If it does, the update checker broke!";
+        TextSize = 13;
+        renderer = &1;
+    }
+
+    TextBox.notice {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (50, 20);
+        ReadOnly = true;
+        Size = (298, 35);
+        Text = "               There was a new update!";
+        TextSize = 13;
+        renderer = &1;
+    }
+
+    Button.link {
+        Position = (50, 260);
+        Size = (143, 22);
+        Text = "Go to GitHub";
+        TextSize = 13;
+
+        Renderer {
+            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+
+    Button.done {
+        Position = (210, 260);
+        Size = (143, 22);
+        Text = Close;
+        TextSize = 13;
+
+        Renderer {
+            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+}

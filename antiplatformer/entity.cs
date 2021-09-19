@@ -23,10 +23,6 @@
                     myClass = new entityLogic.decoration(paramaters);
                     myClass.onSpawn();
                     break;
-                case "fadetoblack":
-                    myClass = new entityLogic.fadeToBlack();
-                    myClass.onSpawn();
-                    break;
                 case "darken":
                     myClass = new entityLogic.overlay();
                     myClass.onSpawn(paramaters);

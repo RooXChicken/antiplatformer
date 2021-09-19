@@ -1,0 +1,30 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+0[INFO] Connected to the server!
+15936[INFO] Loaded the font
+15936[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+15936[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+15936[INFO] Updated discord rich presence
+15936[INFO] Loaded entity with data: checkpoint | 300>150
+15936[INFO] Loaded entity with data: checkpoint | 480>150
+15936[INFO] Loaded entity with data: checkpoint | 800>150
+15936[INFO] Loaded entity with data: checkpoint | 1125>150
+15936[INFO] Loaded entity with data: checkpoint | 1350>140
+15936[INFO] Loaded entity with data: checkpoint | 1710>120
+15936[INFO] Loaded entity with data: endportal | 1760>115>false>res/levels/world1/level1.apscene
+15936[INFO] Loaded entity with data: text | 150>150>Arrow keys/WASD to move>0.15
+15936[INFO] Loaded entity with data: text | 365>140>Space bar/Up to jump>0.15
+15936[INFO] Loaded entity with data: text | 550>150>Down/S to crouch>0.15
+15936[INFO] Loaded entity with data: text | 915>135>Press Down/S in the air to dive>0.15
+15936[INFO] Loaded entity with data: text | 1400>120>This is a short demo, not the finished product. I hope you enjoy anyways>0.15
+15936[INFO] Loaded entity with data: player | 135>150>350
+15936[INFO] Created a new settings file
+15936[INFO] This update changed the way the scene mamager works. From now on, you have to launch the game with -debug in order to access it.\n\nNote: this will also disable leaderboard submissions.\n\nHave fun! - RooXChicken
+
+17401[INFO] Unloaded the cameras
+17401[INFO] Unloaded the UI
+17401[INFO] Unloaded the entities
+17401[INFO] Unloaded the framerate clocks
+17401[INFO] Unloaded DiscordRPC
+17401[INFO] Unloaded the window

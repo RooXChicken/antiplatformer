@@ -1,0 +1,9 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+0[INFO] Connected to the server!
+13138[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: TGUI.TGUIException: Failed to load 'themes/apgui.png'
+   at TGUI.Gui.LoadWidgetsFromFile(String filename, Boolean replaceExisting)
+   at antiplatformer.Game.initTitle() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 98
+   at antiplatformer.Game.splashUpdate() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 189
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 159

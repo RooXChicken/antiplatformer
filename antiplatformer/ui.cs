@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using SFML.Graphics;
 using SFML.System;
+using TGUI;
 
 namespace antiplatformer
 {
@@ -12,6 +14,8 @@ namespace antiplatformer
         public static Sprite fullHeart;
         public static Sprite halfHeart;
         public static Sprite emptyHeart;
+
+        public static Gui gui;
 
         public ui()
         {
@@ -26,6 +30,11 @@ namespace antiplatformer
 
             fullHeart.Scale = new Vector2f(2.0f, 2.0f);
             halfHeart.Scale = new Vector2f(2.0f, 2.0f);
+        }
+
+        public static void loadUI(string path)
+        {
+            gui.LoadWidgetsFromFile(path);
         }
 
         public static List<Sprite> sprites = new List<Sprite>();

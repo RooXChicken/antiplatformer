@@ -1,0 +1,21 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+2413[ERROR] splash screen broke lol i dont care
+30650[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.IO.FileNotFoundException: Could not find file '/run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/PLACEHOLDER'.
+File name: '/run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/PLACEHOLDER'
+   at Interop.ThrowExceptionForIoErrno(ErrorInfo errorInfo, String path, Boolean isDirectory, Func`2 errorRewriter)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String path, OpenFlags flags, Int32 mode)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   at System.IO.File.ReadAllLines(String path)
+   at antiplatformer.scene.loadScene(String path) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/scene.cs:line 32
+   at antiplatformer.scene.reloadScene() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/scene.cs:line 25
+   at antiplatformer.gameManager.handleEvents(RenderWindow renderWindow) in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/gameManager.cs:line 162
+   at antiplatformer.Game.update() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 196
+31039[INFO] Unloaded the cameras
+31039[WARN] Object unloaded was never loaded! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at antiplatformer.ui.unload() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/ui.cs:line 77
+   at antiplatformer.Game.shutdown() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 489

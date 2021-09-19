@@ -1,0 +1,21 @@
+0[INFO] Starting game...
+0[INFO] Created the main window
+0[INFO] Created the cameras
+2175[INFO] Loaded the font
+2175[INFO] Loaded a tilemap with path: res/levels/world1/tutorial/tutorial.map
+2175[INFO] Loaded level with path: res/levels/world1/tutorial/tutorial.map
+2175[INFO] Updated discord rich presence
+2175[FATAL] Failed to update the main game! I'm going to keep going, but beware of dragons! Exception: System.DllNotFoundException: Unable to load DLL 'csfml-audio' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at SFML.Audio.Music.sfMusic_createFromFile(String Filename)
+   at SFML.Audio.Music..ctor(String filename)
+   at antiplatformer.scene.loadScene(String path) in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\scene.cs:line 66
+   at antiplatformer.Game.initMain() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 229
+   at antiplatformer.Game.initTitle() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 209
+   at antiplatformer.Game.splashUpdate() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 277
+   at antiplatformer.Game.update() in C:\Users\RooXChicken\Downloads\antiplatformer\antiplatformer\game.cs:line 243
+14941[INFO] Unloaded the cameras
+14941[INFO] Unloaded the UI
+14941[INFO] Unloaded the entities
+14941[INFO] Unloaded the framerate clocks
+14941[INFO] Unloaded DiscordRPC
+14941[INFO] Unloaded the window
