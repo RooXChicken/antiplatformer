@@ -1,8 +1,0 @@
-0[INFO] Starting game...
-0[INFO] Created the main window
-0[INFO] Created the cameras
-15172[ERROR] splash screen broke lol i dont care
-32859[INFO] Unloaded the cameras
-32859[INFO] Unloaded the entities
-32859[WARN] Object unloaded was never loaded! Exception: System.NullReferenceException: Object reference not set to an instance of an object.
-   at antiplatformer.Game.shutdown() in /run/media/rooxchicken/1TB/Projets/cs/antiplatformer/antiplatformer/game.cs:line 450

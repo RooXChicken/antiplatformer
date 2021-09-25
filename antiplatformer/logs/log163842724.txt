@@ -1,5 +1,0 @@
-0[INFO] Starting game...
-0[INFO] Created the main window
-0[INFO] Created the cameras
-0[INFO] Connected to the server!
-13811[ERROR] splash screen broke lol i dont care

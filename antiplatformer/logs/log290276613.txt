@@ -1,6 +1,0 @@
-0[INFO] Starting game...
-0[INFO] Created the main window
-0[INFO] Created the cameras
-0[WARN] Could not connect to the server... Try again later!
-0[INFO] Failed to connect to the server.
-676[ERROR] splash screen broke lol i dont care

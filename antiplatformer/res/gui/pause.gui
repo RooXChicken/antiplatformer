@@ -1,0 +1,72 @@
+Renderer.1 {
+    texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+ChildWindow.menu {
+    Position = (440, 220);
+    PositionLocked = true;
+    Size = (400, 300);
+    Title = "Pause Menu";
+    TitleAlignment = Center;
+    TitleButtons = Close;
+
+    Renderer {
+        backgroundcolor = rgb( 113, 105, 117);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = rgb( 65, 63, 67);
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+        }
+    }
+
+    Button.resume {
+        Position = (100, 30);
+        Size = (189, 60.678);
+        Text = Resume;
+        TextSize = 30;
+
+        Renderer {
+            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+
+    Button.options {
+        Position = (70, 120);
+        Size = (249, 60.678);
+        Text = Options;
+        TextSize = 30;
+        renderer = &1;
+    }
+
+    Button.quit {
+        Position = (90, 210);
+        Size = (209, 60.678);
+        Text = "Main Menu";
+        TextSize = 30;
+        renderer = &1;
+    }
+}

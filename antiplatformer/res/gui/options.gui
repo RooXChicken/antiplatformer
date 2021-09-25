@@ -1,0 +1,121 @@
+Renderer.1 {
+    texturechecked = "res/gui/themes/apgui.png" Part(47, 0, 16, 16);
+    texturecheckeddisabled = None;
+    texturecheckedfocused = None;
+    texturecheckedhover = None;
+    textureunchecked = "res/gui/themes/apgui.png" Part(31, 0, 16, 16);
+    textureuncheckeddisabled = None;
+    textureuncheckedfocused = None;
+    textureuncheckedhover = None;
+}
+
+Renderer.2 {
+    texturebackground = None;
+}
+
+ChildWindow.window {
+    Position = (340, 140);
+    Size = (590, 442.5);
+    Title = Options;
+    TitleAlignment = Center;
+    TitleButtons = Close;
+
+    Renderer {
+        backgroundcolor = rgb( 113, 105, 117);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = rgb( 65, 63, 67);
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+            texture = None;
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
+    }
+
+    CheckBox.fullscreen {
+        Position = (190, 30);
+        Size = (38, 38);
+        TextSize = 13;
+        renderer = &1;
+    }
+
+    Label.fullscreentex {
+        Position = (20, 30);
+        ScrollbarPolicy = Never;
+        Size = (156.2, 36.8976);
+        Text = "Fullscreen?";
+        TextSize = 25;
+
+        Renderer {
+            texturebackground = None;
+        }
+    }
+
+    Label.focusText {
+        Position = (20, 80);
+        ScrollbarPolicy = Never;
+        Size = (266.2, 36.8976);
+        Text = "Pause on lost focus?";
+        TextSize = 25;
+        renderer = &2;
+    }
+
+    CheckBox.focus {
+        Position = (290, 80);
+        Size = (38, 38);
+        TextSize = 13;
+        renderer = &1;
+    }
+
+    Label.volumeTex {
+        Position = (20, 130);
+        ScrollbarPolicy = Never;
+        Size = (106.2, 35.5116);
+        Text = Volume;
+        TextSize = 25;
+        renderer = &2;
+    }
+
+    Slider.volume {
+        ChangeValueOnScroll = true;
+        InvertedDirection = false;
+        Maximum = 10;
+        Minimum = 0;
+        Position = (140, 140);
+        Size = (200, 16);
+        Step = 1;
+        Value = 0;
+
+        Renderer {
+            bordercolor = #3C3C3C;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            texturethumb = None;
+            texturethumbhover = None;
+            texturetrack = None;
+            texturetrackhover = None;
+            thumbcolor = #F5F5F5;
+            thumbcolorhover = white;
+            trackcolor = #F5F5F5;
+            trackcolorhover = white;
+        }
+    }
+}

@@ -1,3 +1,15 @@
+Renderer.1 {
+    texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
+}
+
+Renderer.2 {
+    texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
 ChildWindow.multiplayer {
     Position = (440, 200);
     Size = (400, 300);
@@ -38,13 +50,10 @@ ChildWindow.multiplayer {
         Size = (168, 25.7986);
         Text = "";
         TextSize = 13;
-
-        Renderer {
-            texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
-        }
+        renderer = &1;
     }
 
-    TextBox.TextBox1 {
+    TextBox.port {
         DefaultText = "Enter the port..";
         HorizontalScrollbarPolicy = Never;
         MaximumCharacters = 0;
@@ -52,24 +61,18 @@ ChildWindow.multiplayer {
         Size = (168, 25.7986);
         Text = "";
         TextSize = 13;
-
-        Renderer {
-            texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
-        }
+        renderer = &1;
     }
 
-    TextBox.TextBox2 {
-        DefaultText = Console;
+    TextBox.name {
+        DefaultText = "Enter a username...";
         HorizontalScrollbarPolicy = Never;
         MaximumCharacters = 0;
         Position = (20, 110);
-        Size = (358, 174.976);
+        Size = (358, 34.976);
         Text = "";
         TextSize = 13;
-
-        Renderer {
-            texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
-        }
+        renderer = &1;
     }
 
     Button.connect {
@@ -77,14 +80,7 @@ ChildWindow.multiplayer {
         Size = (139, 47.1187);
         Text = "Connect to server";
         TextSize = 13;
-
-        Renderer {
-            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
-            texturedisabled = None;
-            texturedown = None;
-            texturefocused = None;
-            texturehover = None;
-        }
+        renderer = &2;
     }
 
     Button.cancel {
@@ -92,13 +88,21 @@ ChildWindow.multiplayer {
         Size = (139, 47.1187);
         Text = Cancel;
         TextSize = 13;
+        renderer = &2;
+    }
+
+    TextBox.note {
+        DefaultText = "Leave blank to connect to the official servers!";
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (20, 160);
+        ReadOnly = true;
+        Size = (358, 34.976);
+        Text = "";
+        TextSize = 13;
 
         Renderer {
-            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
-            texturedisabled = None;
-            texturedown = None;
-            texturefocused = None;
-            texturehover = None;
+            texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
         }
     }
 }
