@@ -6,6 +6,7 @@ using SFML.Audio;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
+using NfdSharp;
 
 namespace antiplatformer.ui
 {
@@ -38,10 +39,13 @@ namespace antiplatformer.ui
                         {
                             foreach(entity.Entity ee in Program.antiPlatformer.entityManager.GetEntities())
                             {
-                                if(ee.Name == Program.antiPlatformer.sceneEditor.grabbedEntityName)
+                                if(ee.Name == Program.antiPlatformer.sceneEditor.entityGrabbedName)
                                 {
-                                    ee.OnKill();
-                                    Program.antiPlatformer.entityManager.RemoveEntity(ee.Name);
+                                    if(ee.OnSceneDamage(1))
+                                    {
+                                        ee.OnKill();
+                                        Program.antiPlatformer.entityManager.RemoveEntity(ee.Name);
+                                    }
                                 }
                             }
                         }
@@ -67,7 +71,7 @@ namespace antiplatformer.ui
                         Program.antiPlatformer.sceneLoader.UpdateScene();
                     };
                 }
-                else
+                else if(w.Name == "sWindow")
                 {
                     Button spawn = (Button) w.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(w)["eSpawn"]);
 
@@ -80,7 +84,45 @@ namespace antiplatformer.ui
                         GetGUI().Widgets[GetUI.GetWidgets(GetGUI())["sWindow"]].Visible = false;
                         GetGUI().Widgets[GetUI.GetWidgets(GetGUI())["sWindow"]].Enabled = false;
                     };
+                }
+                else
+                {
+                    Button save = (Button) w.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(w)["sSave"]);
 
+                    save.Clicked += (sender, e) =>
+                    {
+                        string path = string.Empty;
+                        Nfd.NfdResult result = Nfd.SaveDialog("*", ".", out path);
+                        if(result == Nfd.NfdResult.NFD_OKAY)
+                        {
+                            Program.antiPlatformer.sceneEditor.Save(path);
+                        }
+                        else
+                        {
+                            Program.antiPlatformer.sceneEditor.Save("");
+                        }
+
+                        GetWidget("unsaved").Enabled = false;
+                        GetWidget("unsaved").Visible = false;
+                        Program.antiPlatformer.sceneEditor.Unload();
+                    };
+
+                    Button cancel = (Button) w.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(w)["cancel"]);
+
+                    cancel.Clicked += (sender, e) =>
+                    {
+                        GetWidget("unsaved").Enabled = false;
+                        GetWidget("unsaved").Visible = false;
+                        Program.antiPlatformer.sceneEditor.hasSaved = true;
+                    };
+
+                    Button noSave = (Button) w.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(w)["nSave"]);
+
+                    noSave.Clicked += (sender, e) =>
+                    {
+                        Program.antiPlatformer.sceneEditor.Save("");
+                        Program.antiPlatformer.sceneEditor.Unload();
+                    };
                 }
             }
         }

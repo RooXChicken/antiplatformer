@@ -1,23 +1,9 @@
 Renderer.1 {
-    texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
-
-    scrollbar {
-        arrowbackgroundcolor = #F5F5F5;
-        arrowbackgroundcolorhover = white;
-        arrowcolor = #3C3C3C;
-        arrowcolorhover = black;
-        texturearrowdown = None;
-        texturearrowdownhover = None;
-        texturearrowup = None;
-        texturearrowuphover = None;
-        texturethumb = None;
-        texturethumbhover = None;
-        texturetrack = None;
-        texturetrackhover = None;
-        thumbcolor = #DCDCDC;
-        thumbcolorhover = #E6E6E6;
-        trackcolor = #F5F5F5;
-    }
+    texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
 }
 
 Renderer.2 {
@@ -65,6 +51,28 @@ Renderer.3 {
 }
 
 Renderer.4 {
+    texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
+
+    scrollbar {
+        arrowbackgroundcolor = #F5F5F5;
+        arrowbackgroundcolorhover = white;
+        arrowcolor = #3C3C3C;
+        arrowcolorhover = black;
+        texturearrowdown = None;
+        texturearrowdownhover = None;
+        texturearrowup = None;
+        texturearrowuphover = None;
+        texturethumb = None;
+        texturethumbhover = None;
+        texturetrack = None;
+        texturetrackhover = None;
+        thumbcolor = #DCDCDC;
+        thumbcolorhover = #E6E6E6;
+        trackcolor = #F5F5F5;
+    }
+}
+
+Renderer.5 {
     backgroundcolor = rgb( 113, 105, 117);
     bordercolor = Black;
     borders = (1, 1, 1, 1);
@@ -112,7 +120,7 @@ Renderer.4 {
     }
 }
 
-Renderer.5 {
+Renderer.6 {
     texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
     texturedisabled = None;
     texturedown = None;
@@ -126,7 +134,7 @@ ChildWindow.levelData {
     Title = "Level Data";
     TitleAlignment = Center;
     TitleButtons = Minimize | Close;
-    renderer = &4;
+    renderer = &5;
 
     TextBox.path {
         DefaultText = "Level Path";
@@ -137,7 +145,7 @@ ChildWindow.levelData {
         Text = "";
         TextSize = 16;
         UserData = "";
-        renderer = &2;
+        renderer = &3;
     }
 
     TextBox.levelName {
@@ -148,7 +156,7 @@ ChildWindow.levelData {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &2;
+        renderer = &3;
     }
 
     TextBox.skybox {
@@ -159,7 +167,7 @@ ChildWindow.levelData {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &2;
+        renderer = &3;
     }
 
     TextBox.music {
@@ -170,18 +178,7 @@ ChildWindow.levelData {
         Size = (408, 23.1309);
         Text = "";
         TextSize = 16;
-        renderer = &2;
-    }
-
-    TextBox.save {
-        DefaultText = "Export Path";
-        HorizontalScrollbarPolicy = Never;
-        MaximumCharacters = 0;
-        Position = (10, 130);
-        Size = (408, 23.1309);
-        Text = "";
-        TextSize = 16;
-        renderer = &2;
+        renderer = &3;
     }
 
     Button.update {
@@ -189,7 +186,7 @@ ChildWindow.levelData {
         Size = (220, 22);
         Text = "Update level";
         TextSize = 13;
-        renderer = &5;
+        renderer = &1;
     }
 
     Button.render {
@@ -197,7 +194,22 @@ ChildWindow.levelData {
         Size = (160, 22);
         Text = "Toggle render type";
         TextSize = 13;
-        renderer = &5;
+        renderer = &1;
+    }
+
+    Button.save {
+        Position = (10, 131);
+        Size = (410, 22);
+        Text = "Save and exit";
+        TextSize = 13;
+
+        Renderer {
+            texture = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 16);
+            texturedisabled = None;
+            texturedown = None;
+            texturefocused = None;
+            texturehover = None;
+        }
     }
 }
 
@@ -207,7 +219,7 @@ ChildWindow.entityEditor {
     Title = "Entity editor";
     TitleAlignment = Center;
     TitleButtons = Minimize | Close;
-    renderer = &4;
+    renderer = &5;
 
     TextBox.data {
         DefaultText = "Please select an entity";
@@ -217,7 +229,7 @@ ChildWindow.entityEditor {
         Size = (410, 125);
         Text = "";
         TextSize = 16;
-        renderer = &3;
+        renderer = &4;
     }
 
     Button.spawn {
@@ -225,7 +237,7 @@ ChildWindow.entityEditor {
         Size = (161, 22);
         Text = "Spawn Entity";
         TextSize = 13;
-        renderer = &5;
+        renderer = &1;
     }
 
     Button.kill {
@@ -233,7 +245,7 @@ ChildWindow.entityEditor {
         Size = (161, 22);
         Text = "Kill Entity";
         TextSize = 13;
-        renderer = &5;
+        renderer = &1;
     }
 
     TextBox.name {
@@ -245,7 +257,7 @@ ChildWindow.entityEditor {
         Size = (170, 35);
         Text = "";
         TextSize = 16;
-        renderer = &3;
+        renderer = &4;
     }
 
     TextBox.type {
@@ -257,7 +269,7 @@ ChildWindow.entityEditor {
         Size = (220, 35);
         Text = "";
         TextSize = 16;
-        renderer = &3;
+        renderer = &4;
     }
 }
 
@@ -326,7 +338,7 @@ ChildWindow.sWindow {
         Size = (410, 125);
         Text = "";
         TextSize = 16;
-        renderer = &1;
+        renderer = &2;
     }
 
     Button.eSpawn {
@@ -334,7 +346,7 @@ ChildWindow.sWindow {
         Size = (411, 22);
         Text = "Spawn Entity";
         TextSize = 13;
-        renderer = &5;
+        renderer = &1;
     }
 
     TextBox.eName {
@@ -345,6 +357,79 @@ ChildWindow.sWindow {
         Size = (410, 35);
         Text = "";
         TextSize = 16;
+        renderer = &2;
+    }
+}
+
+ChildWindow.unsaved {
+    Enabled = false;
+    Position = (490, 270);
+    Size = (320, 250);
+    Title = "Unsaved work!";
+    TitleAlignment = Center;
+    TitleButtons = Close;
+    Visible = false;
+
+    Renderer {
+        backgroundcolor = rgb( 113, 105, 117);
+        bordercolor = Black;
+        borders = (1, 1, 1, 1);
+        distancetoside = 5;
+        paddingbetweenbuttons = 2;
+        showtextontitlebuttons = false;
+        texturebackground = None;
+        texturetitlebar = None;
+        titlebarcolor = rgb( 65, 63, 67);
+
+        closebutton {
+            backgroundcolor = #F5F5F5;
+            backgroundcolordown = #EBEBEB;
+            backgroundcolorhover = white;
+            bordercolor = #3C3C3C;
+            bordercolordown = black;
+            bordercolorhover = black;
+            borders = (1, 1, 1, 1);
+            textcolor = #3C3C3C;
+            textcolordown = black;
+            textcolorhover = black;
+        }
+    }
+
+    TextBox.unText {
+        HorizontalScrollbarPolicy = Never;
+        MaximumCharacters = 0;
+        Position = (20, 10);
+        ReadOnly = true;
+        Size = (280, 115);
+        Text = "   You have unsaved work!\n\n   Are you sure you want to                    exit? ";
+        TextSize = 20;
+
+        Renderer {
+            texturebackground = "res/gui/themes/apgui.png" Part(0, 0, 31, 16) Middle(1, 1, 29, 14);
+        }
+    }
+
+    Button.sSave {
+        Position = (20, 150);
+        Size = (131, 35.2787);
+        Text = "Save and exit";
+        TextSize = 13;
         renderer = &1;
+    }
+
+    Button.cancel {
+        Position = (170, 150);
+        Size = (131, 35.2787);
+        Text = Cancel;
+        TextSize = 13;
+        renderer = &6;
+    }
+
+    Button.nSave {
+        Position = (40, 200);
+        Size = (241, 35.2787);
+        Text = "Exit without saving";
+        TextSize = 13;
+        renderer = &6;
     }
 }

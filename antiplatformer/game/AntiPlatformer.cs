@@ -15,7 +15,7 @@ namespace antiplatformer
     {
         public int GAME_STATE = 0;
         public bool GAME_DEBUG = true;
-        public string GAME_VERSION = "A-0.2.5";
+        public string GAME_VERSION = "A-0.2.6";
 
         public RenderWindow window;
         public VideoMode mode;

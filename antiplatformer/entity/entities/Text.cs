@@ -57,6 +57,10 @@ namespace antiplatformer.entity.entities
         {
             
         }
+        public override bool OnSceneDamage(int damage)
+        {
+            return true;
+        }
         public override void OnKill()
         {
             text.DisplayedString = "ERROR!!! This should be removed!!! If it is not, send a screenshot to the developer :) i wanna see too!";

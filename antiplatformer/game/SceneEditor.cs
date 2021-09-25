@@ -16,6 +16,8 @@ namespace antiplatformer
 {
     public class SceneEditor
     {
+        public bool unsavedChanges = false;
+        public bool hasSaved = false;
         public Sprite skybox;
         private static Text debugText;
         public string levelPath = "ERROR";
@@ -23,7 +25,7 @@ namespace antiplatformer
 
         float movementSpeed = 200;
 
-        string entityGrabbedName;
+        public string entityGrabbedName = "ERROR";
         int selectedEntityID = 0;
         string updatedParams = "ERROR";
         bool isGrabbed = false;
@@ -40,6 +42,7 @@ namespace antiplatformer
 
         public void Init(RenderWindow renderWindow)
         {
+            hasSaved = false;
             ui = new SceneEditorUI(renderWindow, true);
             MusicManager.StopMusic("generic");
 
@@ -76,7 +79,6 @@ namespace antiplatformer
             TextBox name = (TextBox) ww.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(ww)["levelName"]);
             TextBox skybox = (TextBox) ww.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(ww)["skybox"]);
             TextBox music = (TextBox) ww.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(ww)["music"]);
-            TextBox save = (TextBox) ww.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(ww)["save"]);
 
             Program.antiPlatformer.sceneLoader.LevelName = name.Text;
             Program.antiPlatformer.sceneLoader.LevelPath = path.Text;
@@ -103,10 +105,6 @@ namespace antiplatformer
                 hasFocus = true;
             }
             else if(music.Focus)
-            {
-                hasFocus = true;
-            }
-            else if(save.Focus)
             {
                 hasFocus = true;
             }
@@ -140,6 +138,10 @@ namespace antiplatformer
 
                 position.X += (movementSpeed * GameInput.GetHorizontal()) * Manager.GetDeltaTime();
                 position.Y += (movementSpeed * GameInput.GetVertical()) * Manager.GetDeltaTime();
+            }
+            else
+            {
+                unsavedChanges = true;
             }
 
             mousePosition = window.MapPixelToCoords(new Vector2i(Mouse.GetPosition(window).X, Mouse.GetPosition(window).Y));
@@ -199,6 +201,7 @@ namespace antiplatformer
 
                     if ((Mouse.IsButtonPressed(Mouse.Button.Left) && mousePos.Intersects(e.Sprite.GetGlobalBounds())) && !isGrabbed)
                     {
+                        unsavedChanges = true;
                         isGrabbed = true;
                         entityGrabbedName = e.Name;
                         e.Position = mousePosition;
@@ -228,20 +231,41 @@ namespace antiplatformer
 
         public void Exit()
         {
+            if(unsavedChanges)
+            {
+                ui.GetWidget("unsaved").Enabled = true;
+                ui.GetWidget("unsaved").Visible = true;
+            }
+            else
+            {
+                hasSaved = true;
+            }
+
+            while(!hasSaved)
+            {
+                Program.antiPlatformer.update();
+                Program.antiPlatformer.render();
+            }
+        }
+
+        public void Unload()
+        {
             selectedEntityID = 0;
             isGrabbed = false;
             grabbedEntityInput = new string[1];
             entityGrabbedName = "ERROR";
 
-            Save("test.apscene");
+            //Save("");
 
             ui.Unload();
 
+            Program.antiPlatformer.GAME_STATE = 3;
             Manager.RestartDeltaTime();
         }
 
         public void Save(string sceneName)
         {
+            hasSaved = true;
             string finalInput = "";
             ChildWindow w = (ChildWindow) ui.GetWidget("levelData");
             try
@@ -295,11 +319,9 @@ namespace antiplatformer
                 Logger.LogError("Failed to write level to the scene! Exception: " + e);
             }
 
-            TextBox save = (TextBox) w.Widgets.ElementAt(GetUI.GetWidgetsFromWindow(w)["save"]);
-
-            if (save.Text != "")
+            if (sceneName != "")
             {
-                File.WriteAllText(save.Text, finalInput);
+                File.WriteAllText(sceneName, finalInput);
             }
             else
             {

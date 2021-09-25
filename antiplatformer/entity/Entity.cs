@@ -27,6 +27,7 @@ namespace antiplatformer.entity
         public abstract void Render(RenderWindow window);
         
         public abstract void OnDamage(int damage);
+        public abstract bool OnSceneDamage(int damage);
         public abstract void OnKill();
     }
 }

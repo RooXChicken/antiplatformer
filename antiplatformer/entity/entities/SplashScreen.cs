@@ -60,6 +60,10 @@ namespace antiplatformer.entity.entities
         {
             
         }
+        public override bool OnSceneDamage(int damage)
+        {
+            return true;
+        }
         public override void OnKill()
         {
             

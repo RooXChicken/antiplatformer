@@ -513,6 +513,33 @@ namespace antiplatformer.entity.entities
             window.Draw(Sprite);
         }
 
+        public override bool OnSceneDamage(int damage)
+        {
+            SoundEffectManager.PlaySound("hurt");
+            Health -= damage;
+
+            // damageTimer.Restart();
+
+            // if (Manager.random.Next(0, 10) >= 5)
+            // {
+            //     CameraUtilities.CameraShake(15, true);
+            // }
+            // else
+            // {
+            //     CameraUtilities.CameraShake(15, false);
+            // }
+
+            if (Health <= 0)
+            {
+                Logger.Log("you monster.");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public override void OnKill()
         {
             
