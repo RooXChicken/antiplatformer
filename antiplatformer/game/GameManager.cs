@@ -9,7 +9,7 @@ namespace antiplatformer
 {
     public class Manager
     {
-        public static float GAME_TIME_SCALE = 1f; //WILL MAKE THINGS SLOWER OR FASTER. this is **EVERYTHING** that uses deltatime. be careful!
+        public static float GAME_TIME_SCALE = 0.1f; //WILL MAKE THINGS SLOWER OR FASTER. this is **EVERYTHING** that uses deltatime. be careful!
         public static Font font = new Font("res/fonts/font.ttf");
         public static bool GAME_HAS_FOCUS = true;
         public static Clock uptime = new Clock();
